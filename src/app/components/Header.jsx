@@ -66,7 +66,7 @@ function Header({type}) {
                             <li><Link href={'/'}><Image src={Telegram} alt="Telegram" /></Link></li>
                             <li><Link href={'/'}><Image src={Whatsapp} alt="Whatsapp"/></Link></li>
                             <li><Link href={'/'}><Image src={Global} alt="Global" /></Link></li>
-                            <li className='button'><Link href={'/'} className='btn btn-outline-light'>Contact Us</Link></li>
+                            <li className='button'><Link href={'/contact'} className='btn btn-outline-light'>Contact Us</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -97,7 +97,18 @@ function Header({type}) {
                         </div>
                     </Container>
                 </div>
-            </div> : ''
+            </div> 
+            : 
+            <div className='HomePageHero singlePage'> 
+                <img src="images/bg-02.png" alt="" />
+                
+                <div className="HeroContent text-center">
+                    <Container>
+                        <h1>Get in touch</h1> 
+                        <p>At metaport, we provide static websites to our clients as well as we make fully functional web app portals using modern technologies.</p>
+                    </Container>
+                </div>
+            </div>
         }
         </>
     )

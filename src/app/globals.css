@@ -262,6 +262,9 @@ header.HeaderWrap .headerRight ul li.button a:hover{
     color: #fff;
 	width: 100%;
 }
+.HomePageHero.singlePage .HeroContent{
+    top: calc(50% + 30px)
+}
 .HeroContent h1, .HeroContent h2 {
     font-size: 96px;
     font-weight: 400;
@@ -278,6 +281,15 @@ header.HeaderWrap .headerRight ul li.button a:hover{
     margin-bottom: 20px;
     font-size: 19px;
     font-weight: bold;
+}
+.HomePageHero.singlePage .HeroContent p{
+    margin-left: auto;
+    margin-right: auto;
+}
+.HomePageHero.singlePage img{
+    width: 100%;
+    max-height: 520px;
+    object-fit: cover;
 }
 .HeroContent .dFlex{
 	justify-content: flex-start;
@@ -304,7 +316,7 @@ header.HeaderWrap .headerRight ul li.button a:hover{
     width: 100%;
     position: absolute;*/
 }
-.HomePageHero img, .HomePageHero video {
+.HomePageHero video {
     width: 100%;
     height: 100vh;
     object-fit: cover;
