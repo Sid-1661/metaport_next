@@ -1,0 +1,119 @@
+.mapWrap{
+    background: var(--theme-purple);
+    padding-top: 80px;
+}
+
+.FormWrap{
+    padding: 50px 0px;
+    /* background: var(--theme-green); */
+    background-color: #44F9C3;
+}
+
+.FormWrap h3{
+    font-size: 78px;
+    text-transform: uppercase; 
+    margin-top: 60px;
+}
+
+.FormWrap form{
+    background: #fff;
+    padding: 32px;
+    border-radius: 16px;
+}
+
+.FormWrap input{
+    height: 60px;
+    padding: 13px 25px;
+    border: 2px solid #B8B8B8;
+}
+
+.FormWrap textarea{
+    height: 141px;
+    padding: 13px 25px;
+    border: 2px solid #B8B8B8;
+}
+
+.FormWrap label{
+    margin-bottom: 11px;
+    font-family: 'Anton', sans-serif;
+    font-size: 18px;
+    color: #000;
+}
+
+.AddressWrap{
+    background-color: var(--theme-color);
+    padding: 60px 0px;
+    position: relative;
+}
+
+.AddressWrap:after{
+	content: "";
+    background-image: url('/images/003-w.png');
+    height: 274px;
+    width: 337px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+
+.AddressWrap .row{
+    align-items: center;
+}
+
+.Icon{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+    height: 84px;
+    width: 84px;
+} 
+
+.AddressWrap .FlexRow{
+    align-items: center;
+}
+
+.addressInfo{
+    position: relative;
+    padding-left: 15px;
+}
+
+.addressInfo:before{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 2px;
+    background-color: #FD76B2;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: -30px;
+} 
+
+.addressInfo p{
+    width: 340px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #fff;
+    align-items: center;
+    display: flex;
+}
+
+.addressInfo p img{
+    margin-right: 15px;
+} 
+
+.InfoWidget{
+
+}
+.InfoWidget h4{
+    font-size: 36px;
+    color: #fff;
+    line-height: 46px;
+}
+.InfoWidget p{
+    font-size: 24px;
+    color: #fff;
+    line-height: 34px;
+}

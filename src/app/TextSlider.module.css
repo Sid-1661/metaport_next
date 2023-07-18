@@ -20,3 +20,9 @@
     transform: translateX(-100%); 
     
 }
+
+@media (max-width: 991px) {
+    .slideshow {
+        height: 80px;
+    }    
+}

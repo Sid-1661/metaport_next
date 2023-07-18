@@ -1,9 +1,11 @@
 import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
+import Image from 'next/image';
 
 import email from '../images/i-01.png'
 import call from '../images/i-02.png'
 import notification from '../images/i-03.png'
+import Logo from '../images/logo.svg'
 
 function Footer() {
     return (
@@ -25,8 +27,8 @@ function Footer() {
                     <Row>
                         <Col md={3}>
                             <div className="widget">
-
-                                <img src="images/logo.png" alt="" className='fLogo'/>
+                                
+                                <Image src={Logo} alt="Metaport" className='fLogo' style={{width: 209, height: 'auto'}} priority={true} /> 
 
                                 <p>Unleashing the boundless potential for global industries, pursuing excellence with brilliant minds and building powerful tools.</p>
 
@@ -69,15 +71,16 @@ function Footer() {
                                 <h3>Business Inquiry</h3>
 
                                 <div className="inquiry">
-                                    <img src={email} alt="" />
+                                    {/* <img src={email} alt="" /> */}
+                                    <Image src={email} alt="Email" />
 
                                     <div>
                                         <h5>Email</h5>
                                         <p>business@metaport.com</p>
                                     </div>                                
                                 </div>
-                                <div className="inquiry">
-                                    <img src={call} alt="" />
+                                <div className="inquiry">                                    
+                                    <Image src={call} alt="Call"/>
 
                                     <div>
                                         <h5>Phone</h5>
@@ -85,8 +88,8 @@ function Footer() {
                                     </div> 
 
                                 </div>
-                                <div className="inquiry">
-                                    <img src={notification} alt="" />
+                                <div className="inquiry">                                    
+                                    <Image src={notification} alt="Notification"/>
                                     <div>
                                         <h5>Location</h5>
                                         <p>Sheikh Mohammed Bin Rashed Boulevard Downtown Dubai, PO Box 123234 Dubai, UAE</p>

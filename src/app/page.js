@@ -11,9 +11,17 @@ import ProcessTextSlider from './components/ProcessTextSlider';
 export default function Home() {
     const [isInView, setIsInView] = useState(false);
     const [isInLineView, setIsInLineView] = useState(false);
+    const [isInProgressView, setisInProgressView] = useState(false);
 
     const handleScroll = () => {
         const position = window.pageYOffset || document.documentElement.scrollTop;
+
+        console.log(position);
+
+        if(position > 1700) { 
+            setisInProgressView(true);              
+        } 
+
 
         if(position > 3200) { 
             setIsInView(true);              
@@ -22,6 +30,8 @@ export default function Home() {
         if(position > 4000){
             setIsInLineView(true); 
         }
+
+
     };
 
     React.useEffect(() => {
@@ -79,33 +89,34 @@ export default function Home() {
                 <Container>
                     <Row>
                         <Col md={12} className='text-center'>
-                            <img src="images/001.png" alt="" className='wow zoomIn' data-wow-duration="1.3s" data-wow-delay="0.4s" />
+                         
+                            <img src="images/001.png" alt="" className='wow zoomIn' data-wow-duration="1.3s" data-wow-delay="0.5s" />
 
                             <div className="ProgressTitle">                            
                                 <img src="images/002.png" alt="" className='wow zoomIn' data-wow-duration="1.3s" data-wow-delay="1.3s" /> <br />
 
-                                <a href="#" className='c-button fillBtn Green wow zoomIn' data-wow-delay="2.0s">Get Started</a>
+                                <a href="#" className='c-button fillBtn Green wow zoomIn' data-wow-delay="1.3s">Get Started</a>                                 
                             </div>
 
                             <div className="ProgressContent">
                                 <ul>
-                                    <li className='one wow zoomInUp' data-wow-delay="1.3s">
+                                    <li className='one wow fadeIn' data-wow-delay="1.5s">
                                         <span>Accelerate Global Reach</span>
                                     </li>
-                                    <li className='two wow zoomInRight' data-wow-delay="1.4s">
+                                    <li className='two wow fadeIn' data-wow-delay="1.5s">
                                         <span className=''>Empowering AI at Your Fingertips</span>
                                     </li>
-                                    <li className='three wow zoomInLeft' data-wow-delay="1.5s">
+                                    <li className='three wow fadeIn' data-wow-delay="1.5s">
                                         <span>Embrace the Feature of Decentralisation</span>
                                     </li>
-                                    <li className='four wow zoomInRight' data-wow-delay="1.6s">
+                                    <li className='four wow fadeIn' data-wow-delay="1.5s">
                                         <span>Bridging Innovation to Implementation</span>
                                     </li>
-                                    <li className='five wow zoomInLeft' data-wow-delay="1.7s">
+                                    <li className='five wow fadeIn' data-wow-delay="1.5s">
                                         <span>Amplifying Your Digital Presence</span>
                                     </li>
                                 </ul> 
-                            </div>
+                            </div> 
                         </Col>
                     </Row>
                 </Container>
@@ -205,13 +216,13 @@ export default function Home() {
                                     </div>
                                     <div className="ProccessContent right"></div>
 
-                                    <div className="wpb_wrapper">
+                                    {/* <div className="wpb_wrapper">
                                         {isInLineView && 
                                             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="618" viewBox="0 0 15 618">
                                                 <path className="lower-line" d="M7 0, L7 618" stroke="#fff" strokeWidth="14" pathLength="1" fill="none"></path>
                                             </svg>
                                         }
-                                    </div>
+                                    </div> */}
                                 </div>
 
                                 <div className="BlockContent">
@@ -258,7 +269,7 @@ export default function Home() {
 
                     <Row>
                         <Col md={4} className='mb-4'>
-                            <div className="BlogWrap wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                            <div className="BlogWrap wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
                                 <img src="images/003.png" alt="" />
 
                                 <h3>New product name</h3>
@@ -269,7 +280,7 @@ export default function Home() {
                             </div>
                         </Col>
                         <Col md={4} className='mb-4'>
-                            <div className="BlogWrap wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s" style={{backgroundColor: "#FD5DA5"}}>
+                            <div className="BlogWrap wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.8s" style={{backgroundColor: "#FD5DA5"}}>
                                 <img src="images/003.png" alt="" />
 
                                 <h3>New product name</h3>
@@ -280,7 +291,7 @@ export default function Home() {
                             </div>
                         </Col>
                         <Col md={4} className='mb-4'>
-                            <div className="BlogWrap wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s" style={{backgroundColor: "#6DCAFC"}}>
+                            <div className="BlogWrap wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="1.0s" style={{backgroundColor: "#6DCAFC"}}>
                                 <img src="images/003.png" alt="" />
 
                                 <h3>New product name</h3>
