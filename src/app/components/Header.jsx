@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Container } from 'reactstrap'
 import Logo from '../images/logo.svg'
 
@@ -6,10 +6,20 @@ import Link from 'next/link';
 import Image from 'next/image';
 import TextSlider from './TextSlider';
 import AnimateButton from './AnimateButton';
+import HeroContent from './HeroContent';
+import Menu from './Menu';
 
 function Header({type}) {
-    
+
+    const [isDivVisible, setIsDivVisible] = useState(false);    
     const headerRef = useRef(); 
+
+    const toggleDiv = (e) => {
+        
+        setIsDivVisible((prevState) => !prevState);
+
+        e.preventDefault();
+    };
 
     useEffect(() => { 
         const handleScroll = () => {
@@ -48,7 +58,7 @@ function Header({type}) {
                             <Image src={Logo} alt="Metaport" style={{width: 209, height: 'auto'}} priority={true} /> 
                         </Link>                        
                     </div>
-                    <div className="menu">
+                    {/*<div className="menu">
                         <ul>
                             <li><Link href={'/'}> Our Expertise</Link></li>
                             <li><Link href={'/'}>Our Products</Link></li>
@@ -114,7 +124,9 @@ function Header({type}) {
                             </Link></li>
                             <li className='button'><Link href={'/contact'} className='btn btn-outline-light'>Contact Us</Link></li>
                         </ul>
-                    </div>
+                    </div> */}
+
+                    <Menu /> 
                 </div>
             </Container>
         </header>
@@ -123,21 +135,33 @@ function Header({type}) {
             <Link href={"/"}>
                 <Image src={Logo} alt="Metaport" style={{width: 209, height: 'auto'}} priority={true} /> 
             </Link> 
+ 
+            
+            <a href="#" onClick={toggleDiv} className='OpenMenu'>
+                <svg width="50px" height="50px" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 7C4 6.44771 4.44772 6 5 6H24C24.5523 6 25 6.44771 25 7C25 7.55229 24.5523 8 24 8H5C4.44772 8 4 7.55229 4 7Z" fill="#fff"/><path d="M4 13.9998C4 13.4475 4.44772 12.9997 5 12.9997L16 13C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15L5 14.9998C4.44772 14.9998 4 14.552 4 13.9998Z" fill="#fff"/><path d="M5 19.9998C4.44772 19.9998 4 20.4475 4 20.9998C4 21.552 4.44772 21.9997 5 21.9997H22C22.5523 21.9997 23 21.552 23 20.9998C23 20.4475 22.5523 19.9998 22 19.9998H5Z" fill="#fff"/></svg>
+            </a>
+            
+            <div className={`MobileMenuWrap ${isDivVisible ? 'show' : ''}`}>
 
-            <div>
-                <i className="fa fa-list"></i>
+                <a href="#" onClick={toggleDiv} className='closeMenu'>
+                    <span class="sidr-class-wpex-close__icon" aria-hidden="true">×</span>
+                </a>
+                <Menu /> 
             </div>
+            
 
         </header>
 
         {type === 'Home' ? 
+
+            
             <div className='HomePageHero'> 
                 <video width="640" height="360" playsInline autoPlay loop muted>
                     <source src="images/banner.mp4" type="video/mp4" />
                     <source src="images/banner.ogg" type="video/ogg" />
                 </video>
                 
-                <div className="HeroContent">
+                {/* <div className="HeroContent">
                     <Container>
                         <h1>Engineering<br/> the modern age with</h1>
 
@@ -152,7 +176,9 @@ function Header({type}) {
                             <Link href={'/'} className='c-button whiteBtn' style={{marginLeft: 25}}>Contact Team</Link>
                         </div>
                     </Container>
-                </div>
+                </div> */}
+
+                <HeroContent />
             </div> 
             : 
             <div className='HomePageHero singlePage'> 

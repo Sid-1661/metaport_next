@@ -17,8 +17,7 @@
   
 .active {
     opacity: 1;
-    transform: translateX(-100%); 
-    
+    transform: translateX(-100%);     
 }
 
 @media (max-width: 991px) {

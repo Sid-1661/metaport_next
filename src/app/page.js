@@ -89,13 +89,15 @@ export default function Home() {
                 <Container>
                     <Row>
                         <Col md={12} className='text-center'>
-                         
-                            <img src="images/001.png" alt="" className='wow zoomIn' data-wow-duration="1.3s" data-wow-delay="0.5s" />
 
-                            <div className="ProgressTitle">                            
-                                <img src="images/002.png" alt="" className='wow zoomIn' data-wow-duration="1.3s" data-wow-delay="1.3s" /> <br />
+                            <div className='ProgressContentWrap'>     
+                                <img src="images/001.png" alt="" className='wow zoomIn' data-wow-duration="1.3s" data-wow-delay="0.5s" />
 
-                                <a href="#" className='c-button fillBtn Green wow zoomIn' data-wow-delay="1.3s">Get Started</a>                                 
+                                <div className="ProgressTitle">                            
+                                    <img src="images/002.png" alt="" className='wow zoomIn' data-wow-duration="1.3s" data-wow-delay="1.3s" /> <br />
+
+                                    <a href="#" className='c-button fillBtn Green wow zoomIn' data-wow-delay="1.3s">Get Started</a>                                 
+                                </div>
                             </div>
 
                             <div className="ProgressContent">
@@ -116,6 +118,8 @@ export default function Home() {
                                         <span>Amplifying Your Digital Presence</span>
                                     </li>
                                 </ul> 
+
+                                <a href="#" className='c-button fillBtn Green wow zoomIn' data-wow-delay="1.3s">Get Started</a>
                             </div> 
                         </Col>
                     </Row>
@@ -198,7 +202,7 @@ export default function Home() {
 
                             <div className="ProcessWrap home-payments__bottom animated">
                                 <div className="BlockContent home-payments__lower-svg">
-                                    <div className="ProccessContent left"></div>    
+                                    <div className="ProccessContent blank left"></div>    
                                     <div className="ProccessContent right">
                                         
                                         <h3 className='wow fadeInRight' data-wow-duration="0.5s">Product Analyst & Design</h3>
@@ -214,7 +218,7 @@ export default function Home() {
 
                                         <p className='wow fadeInLeft' data-wow-duration="0.5s">We work hand in hand with your business department to architect and develop software solutions collaboratively delivering product updates through agile iterations.</p>
                                     </div>
-                                    <div className="ProccessContent right"></div>
+                                    <div className="ProccessContent blank right"></div>
 
                                     {/* <div className="wpb_wrapper">
                                         {isInLineView && 
@@ -226,7 +230,7 @@ export default function Home() {
                                 </div>
 
                                 <div className="BlockContent">
-                                    <div className="ProccessContent left"></div>    
+                                    <div className="ProccessContent blank left"></div>    
                                     <div className="ProccessContent right">
                                         <h3 className='wow fadeInRight' data-wow-duration="0.5s">Testing & Bug Fixing</h3>
 
@@ -240,11 +244,11 @@ export default function Home() {
 
                                         <p className='wow fadeInLeft' data-wow-duration="0.5s">We deploy and distribute your applications, ensuring seamless accessibility for end-users and accelerating global reach.</p>
                                     </div>
-                                    <div className="ProccessContent right"></div>
+                                    <div className="ProccessContent blank right"></div>
                                 </div>
 
                                 <div className="BlockContent">
-                                    <div className="ProccessContent left"></div>    
+                                    <div className="ProccessContent blank left"></div>    
                                     <div className="ProccessContent right">
                                         <h3 className='wow fadeInRight' data-wow-duration="0.5s">Support & Promotion</h3>
 

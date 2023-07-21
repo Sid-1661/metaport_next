@@ -72,6 +72,8 @@
 
 .AddressWrap .FlexRow{
     align-items: center;
+    position: relative;
+    z-index: 999;
 }
 
 .addressInfo{
@@ -116,4 +118,28 @@
     font-size: 24px;
     color: #fff;
     line-height: 34px;
+}
+
+@media (max-width: 991px) {
+    .FormWrap h3{
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+    .FormWrap img{
+        display: none;
+    }
+
+    .addressInfo{
+        text-align: center;
+    }
+    .addressInfo p{
+        justify-content: center;
+    }
+
+    .mapWrap{
+        padding-top: 30px;
+    }
+    .mapWrap img{
+        height: auto;        
+    }
 }

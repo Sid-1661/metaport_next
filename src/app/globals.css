@@ -201,7 +201,7 @@ h2.Title span{
 
 header.HeaderWrap{
 	position: fixed;
-    z-index: 999;
+    z-index: 888;
     width: 100%;    
     padding: 15px 0;
 }
@@ -300,6 +300,7 @@ header.HeaderWrap .headerRight ul li.button a:hover{
     width: 100%;
     max-height: 520px;
     object-fit: cover;
+	min-height: 450px;
 }
 .HeroContent .dFlex{
 	justify-content: flex-start;
@@ -518,6 +519,10 @@ header.HeaderWrap .headerRight ul li.button a:hover{
 	left: -160px;
 }
 
+.ProgressContent .c-button.fillBtn.Green{
+	display: none;
+}
+
 /* Our Services */
 
 .ServiceWrap{
@@ -541,6 +546,7 @@ header.HeaderWrap .headerRight ul li.button a:hover{
 .ServiceDropWrap{
 	position: relative;
 	min-height: 768px;
+	z-index: 88;
 }
 
 .gradientBubble {
@@ -583,7 +589,7 @@ header.HeaderWrap .headerRight ul li.button a:hover{
 }
 .gradientBubble h4{
 	position: relative;
-	z-index: 999;
+	z-index: 888;
 	top: 50%;
 	transform: translate(0px, -50%);
 	color: #fff;
@@ -676,7 +682,7 @@ header.HeaderWrap .headerRight ul li.button a:hover{
 	transform: translate(0px, -50%);
 	text-align: center;
 	width: 100%;
-	z-index: 999;
+	z-index: 888;
 }
 
 .wpb_wrapper .ProcessTitle h3{	
@@ -687,7 +693,7 @@ header.HeaderWrap .headerRight ul li.button a:hover{
 
 .ProcessWrap{
 	position: relative;
-	z-index: 999;
+	z-index: 888;
 	color: #fff;
 	padding-top: 60px;
 }
@@ -727,6 +733,10 @@ header.HeaderWrap .headerRight ul li.button a:hover{
     text-align: left;
     border-left: 7px solid;
     padding-left: 45px;
+}
+
+.ProccessContent.right.blank, .ProccessContent.left.blank{
+	padding: 0px;
 }
 
 .ProccessContent{
@@ -1151,7 +1161,8 @@ p.copyright a{
         width: 100%;
         padding: 20px 50px;
         top: 0px;
-        z-index: 999;
+        z-index: 999999;
+		align-items: center;
     }
 
     .mobileHeader i{
@@ -1159,14 +1170,99 @@ p.copyright a{
         font-size: 30px;
     }
 
+	.MobileMenuWrap{
+		position: fixed;
+		height: 100%;
+		width: 300px;
+		z-index: 999999999;
+		top: 0;		
+		background: #262626;		
+		right: -300px; 
+		transition: right 0.8s ease-in-out; 
+	}
+
+	.MobileMenuWrap.show {
+		right: 0;
+	}
+
+	.MobileMenuWrap a{
+		color: #fff;
+		text-decoration: none;
+	}
+	.MobileMenuWrap .menu ul{
+		margin-bottom: 25px;
+		padding: 0px;
+		list-style: none;
+	}
+	.MobileMenuWrap .menu ul li{
+		border-top: 1px solid rgba(255,255,255,0.06);
+	}
+	.MobileMenuWrap .menu ul li:last-child{
+		border-bottom: 1px solid rgba(255,255,255,0.06);
+	}
+	.MobileMenuWrap .menu ul li a{
+		padding: 15px 20px;
+		display: block;
+	}
+
+	.MobileMenuWrap .headerRight ul{
+		padding-left: 10px;		
+	}
+	.MobileMenuWrap .headerRight ul li{
+		display: inline-block;
+		padding: 10px 10px;
+	}
+	.MobileMenuWrap .headerRight ul li:last-child{
+		display: block;
+	}
+
+	a.closeMenu{
+		font-size: 32px;
+		display: block;
+		padding: 5px 15px;
+	}
+
     body .ProgressWrap {        
-        padding: 50px 0px;
+        padding: 80px 0px;
     }
 
+	body .ProgressContent ul {
+		padding: 0;
+		list-style: none;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	body .ProgressContent ul li span:before {
+		content: "\2022";  
+		color: #000; 
+		font-weight: bold;
+		font-size: 30px;
+		display: inline-block;
+		width: 1em; 
+		margin-left: -1em;
+	}
+
+	.ProgressContentWrap{
+		position: relative;
+	}
+
+	.ProgressWrap .ProgressTitle {		
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 50%;
+		left: 50%;
+	}
+	.ProgressContentWrap .c-button.fillBtn.Green{
+		display: none;
+	}
+	.ProgressContent .c-button.fillBtn.Green{
+		display: block;
+	}
     body .ProgressContent ul li{
         position: relative;
         inset: 0!important;
-        text-align: center!important;
+        text-align: left!important;
         width: 100%!important;
         margin-bottom: 15px;
     }
@@ -1176,19 +1272,88 @@ p.copyright a{
         display: none;
     }
 
-    body .ProgressWrap .ProgressTitle{
-        top: 40%;
-    }
-    .gradientBubble{
-        position: relative;
-        inset: 0!important;
-        width: 200px!important;
-        height: 200px!important;
-    }
+	.ServiceWrap{
+		/* padding-bottom: 0px; */
+		padding: 75px 0px 50px;
+	}
+	
+	.ServiceDropWrap{
+		min-height: 525px;
+	} 
+	.gradientBubble{
+		width: 75px;
+        height: 75px;
+	}
+	.gradientBubble.bigger{
+		width: 112px;
+        height: 112px;
+	}
+	.gradientBubble.big{
+		width: 93px;
+        height: 93px;
+	}
+	.gradientBubble.small{
+		width: 66px;
+        height: 66px;
+	}
+	.gradientBubble:nth-child(1){}
+	.gradientBubble:nth-child(2){
+		left: 130px;
+	}
+	.gradientBubble:nth-child(3){
+		right: 0;
+		left: auto;
+	}
+	.gradientBubble:nth-child(4){
+		top: 250px;
+		right: auto;
+		left: 25px;
+		width: 75px;
+		height: 75px;
+	}
+	.gradientBubble:nth-child(5){
+		width: 112px;
+		height: 112px;
+		top: auto;
+		bottom: 80px;
+		right: 8px;
+	}
+	.gradientBubble:nth-child(6){
+		bottom: auto;
+    	top: 150px;
+	}
+	.gradientBubble:nth-child(7){
+		bottom: auto;
+		left: 115px;
+		top: 110px;
+	}
+	.gradientBubble:nth-child(8){
+		left: auto;
+		right: 0;
+		bottom: auto;
+		top: 200px;
+	}
+	.gradientBubble:nth-child(9){
+		right: auto;
+		left: 105px;
+		bottom: 100px;
+	}
+	.gradientBubble:nth-child(10){
+		bottom: 15px;
+		right: 105px;
+	}
+	.gradientBubble:nth-child(11){
+		left: 140px;
+    	bottom: 190px;
+	}
+	.gradientBubble:nth-child(12){
+		right: auto;
+		left: 13px;
+		bottom: 45px;
+	}
     .gradientBubble h4{
-        font-size: 30px;
+        font-size: 13.38px;
     }
-
 
     .BlockContent{
         display: inherit;
@@ -1199,7 +1364,8 @@ p.copyright a{
         border: none;
         text-align: left;
         padding-right: 0px;
-        padding-left: 45px;
+        padding-left: 15px;
+		padding-bottom: 40px;
     }
 
     body .widget{
@@ -1210,10 +1376,11 @@ p.copyright a{
         font-size: 60px;
     }
 
-    .c-button{
-        padding: 16px 20px;
-    }
-
+    .c-button {
+		padding: 14px 25px;
+		min-width: auto;
+		font-size: 18px;
+	}
 
     .home-payments__globe-line svg{
         top: -175px;
@@ -1221,5 +1388,106 @@ p.copyright a{
 
     h2.Title{
         font-size: 46px;
+    }	
+	
+	.WhatsNewWrap {
+		padding: 30px 0px;
+	}
+
+	.InfoWrap h2{
+		font-size: 50px;
+		line-height: 60px;
+	}
+}
+
+@media (max-width: 767px) {
+	.mobileHeader{
+		padding: 15px;
+	}
+
+	.HeroContent {
+		text-align: center;
+	}
+	.HeroContent h1, .HeroContent h2{
+		font-size: 64px;
+		line-height: 74px;
+	}
+
+	.HeroContent p{
+        font-weight: 30px;
+		font-weight: 600;
+		width: calc(100% - 30px);
+		font-size: 20px;
     }
+
+	.HeroContent .dFlex{
+		display: inline-grid;
+	}
+
+	.HeroContent .c-button.whiteBtn{
+		margin-left: 0px!important;
+		margin-top: 15px;
+	}
+
+	.c-button {
+		padding: 8px 20px;
+		min-width: auto;
+		font-size: 18px;
+		margin-top: 0px;
+	}
+
+	h2.Title {
+		font-size: 30px;
+		padding: 0 0;
+	}
+
+	.OurExpertise h5 {		
+		padding: 8px 20px;
+		font-size: 18px;
+		line-height: 28px;		
+	}
+
+	.OurExpertise ul li {		
+		margin: 0 10px;		
+		font-size: 40px;		
+	}
+
+	.ProccessContent h3{
+		line-height: 59px;
+		font-size: 45px;
+		margin-bottom: 15px;
+	}
+
+	.home-payments__globe-line{
+		padding-top: 30px;
+	}
+
+	.wpb_wrapper img.earth{
+		padding: 10px;
+	}
+
+	.home-payments__globe-line svg {
+		top: -25px;
+		height: auto;
+	}
+	.wpb_wrapper{
+		margin: 0px;
+	}
+	.wpb_wrapper .ProcessTitle h3{
+		font-size: 40px;
+	}
+
+	.footerWrap{
+		padding: 30px 15px 0px;
+	}
+
+	.footerMenu, p.copyright{
+		text-align: center;
+	}
+
+	.ProccessContent p {		
+		font-size: 18px;
+		line-height: 28px;
+		font-weight: normal;
+	}
 }
