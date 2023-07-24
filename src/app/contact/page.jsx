@@ -19,7 +19,7 @@ import Address from '@/app/images/i-05.png'
 function Contact() {
     return (
         <>
-            <Header type="Single"/> 
+            <Header type="Contact"/> 
 
             <div className={Styles.FormWrap}>
                 <Container>

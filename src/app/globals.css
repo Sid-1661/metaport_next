@@ -286,11 +286,16 @@ header.HeaderWrap .headerRight ul li.button a:hover{
 .HeroContent h2{
 	color: var(--theme-color);
 }
+.HeroContent h3{
+	text-transform: uppercase;
+	font-size: 36px;
+	line-height: 46px;
+}
 .HeroContent p {
     width: 60%;
     margin-bottom: 20px;
     font-size: 19px;
-    font-weight: bold;
+    font-weight: normal;
 }
 .HomePageHero.singlePage .HeroContent p{
     margin-left: auto;
@@ -1185,12 +1190,33 @@ p.copyright a{
 		right: 0;
 	}
 
+	/* .MobileMenuWrap.show:before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		inset: 0;
+		background: rgba(0,0,0,0.6);
+		z-index: -1;
+	} */
+	/* .MobileMenuWrap.show::after{
+		content: "";
+		width: 300px;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		right: 0;
+		background: #262626;
+		z-index: -1;
+		transition: right 0.8s ease-in-out; 
+	} */
+
 	.MobileMenuWrap a{
 		color: #fff;
 		text-decoration: none;
 	}
 	.MobileMenuWrap .menu ul{
-		margin-bottom: 25px;
+		margin-bottom: 15px;
 		padding: 0px;
 		list-style: none;
 	}
@@ -1214,6 +1240,7 @@ p.copyright a{
 	}
 	.MobileMenuWrap .headerRight ul li:last-child{
 		display: block;
+		margin-top: 10px;
 	}
 
 	a.closeMenu{
@@ -1411,14 +1438,27 @@ p.copyright a{
 	.HeroContent h1, .HeroContent h2{
 		font-size: 64px;
 		line-height: 74px;
+	}	
+
+	.Sub .HeroContent h1, .Sub .HeroContent h2{
+		font-size: 36px;
+		line-height: 46px;
+	}
+
+	.Sub .HeroContent h3 { 
+		font-size: 26px;
+		line-height: 36px;
 	}
 
 	.HeroContent p{
-        font-weight: 30px;
-		font-weight: 600;
+        font-weight: 30px; 
 		width: calc(100% - 30px);
 		font-size: 20px;
     }
+
+	.Sub .HeroContent p {
+		font-size: 14px;
+	}
 
 	.HeroContent .dFlex{
 		display: inline-grid;

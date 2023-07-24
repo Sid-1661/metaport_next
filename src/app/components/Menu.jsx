@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 import Link from 'next/link';
 
 function Menu() {
@@ -11,7 +10,7 @@ function Menu() {
                     <li><Link href={'/'}> Our Expertise</Link></li>
                     <li><Link href={'/'}>Our Products</Link></li>
                     <li><Link href={'/'}>Insights</Link></li>
-                    <li><Link href={'/'}>Our Company</Link></li>
+                    <li><Link href={'/about'}>Our Company</Link></li>
                 </ul>
             </div>  
 
