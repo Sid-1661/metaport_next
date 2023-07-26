@@ -1,4 +1,4 @@
-"use client"; // This is a client component 👈🏽
+"use client";
 import React from 'react' 
 import { Col, Container, Row } from 'reactstrap'; 
 import Image from 'next/image';
@@ -9,17 +9,8 @@ import Footer from '../components/Footer';
 import Styles from './About.module.css'
 
 import CEOImage from '@/app/images/004.png'
-import SendIcon from '@/app/images/bg-04.png'
-import Building from '@/app/images/001.png'
-import Call from '@/app/images/call.png'
-import Sms from '@/app/images/sms.png'
-import Location from '@/app/images/i-04.png'
-import Address from '@/app/images/i-05.png'
-
 import ValIcon from '@/app/images/i-06.png'
 import Blockquote from '@/app/images/i-07.png'
-
-
 
 function About() {
     return (
@@ -29,7 +20,7 @@ function About() {
             <div className={Styles.FormWrap}>
                 <Container>
                     <Row>
-                        <Col md={4}>
+                        <Col md={4} className='mb-4'>
                             <h3>Our Values</h3>
 
                             <p>In a word where the ordinary becomes obsolete, we dare to be extraordinary. We dare to embrace the pulse of modern age with our game-changing ideas where innovation knows no boundaries.</p>

@@ -122,12 +122,16 @@
 
 
 @media (max-width: 991px) {
+    .FormWrap{
+        padding: 50px 0px;
+    }
     .FormWrap h3{
         margin-top: 0px;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
+        font-size: 50px;
     }
-    .FormWrap img{
-        display: none;
+    .FormWrap img{ 
+
     }
 
     .addressInfo{
