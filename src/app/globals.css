@@ -1425,6 +1425,11 @@ p.copyright a{
 		font-size: 50px;
 		line-height: 60px;
 	}
+
+	.HomePageHero.singlePage .HeroContent p{
+		font-size: 14px;
+		line-height: 24px;
+	}
 }
 
 @media (max-width: 767px) {

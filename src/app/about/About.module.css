@@ -128,10 +128,15 @@
     .FormWrap h3{
         margin-top: 0px;
         margin-bottom: 10px;
-        font-size: 50px;
+        font-size: 40px;
     }
     .FormWrap img{ 
 
+    }
+
+    .valuesWrap h2{
+        font-size: 20px;
+        line-height: 30px;
     }
 
     .addressInfo{
@@ -149,13 +154,31 @@
     }
 
     .CEOText {
-        padding-bottom: 25px;
+        padding-bottom: 0px;
+        padding-top: 20px;
     }
 
+    .Blockquote{
+        width: 30px;
+        height: auto;
+    }
+
+    .CEOText .FlexRow{
+        align-items: flex-end;
+    }
     .CeoImage{
-        margin-bottom: 25px;
+        margin-bottom: 0px;
     }
     .CEOText h3{
         padding-right: 0px;
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .AboutContent h2{
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .AboutContent p{
+        text-align: justify;
     }
 }
