@@ -1,5 +1,6 @@
 "use client"; // This is a client component 👈🏽
 import Image from 'next/image'
+import Link from 'next/link';
 import styles from './page.module.css'
 import React, { useState, useEffect } from 'react';
 import { Col, Container, Row } from 'reactstrap'
@@ -96,15 +97,15 @@ export default function Home() {
                                 <div className="ProgressTitle">                            
                                     <img src="images/002.png" alt="" className='wow zoomIn' data-wow-duration="1.3s" data-wow-delay="1.3s" /> <br />
 
-                                    <a href="#" className='c-button fillBtn Green wow zoomIn' data-wow-delay="1.3s">Get Started</a>                                 
+                                    <Link href={'/contact'} className='c-button fillBtn Green wow zoomIn' data-wow-delay="1.3s">Get Started</Link>                                 
                                 </div>
                             </div>
 
                             <div className="ProgressContent">
                                 <ul>
-                                    <li className='one wow fadeIn' data-wow-delay="1.5s">
+                                    {/* <li className='one wow fadeIn' data-wow-delay="1.5s">
                                         <span>Accelerate Global Reach</span>
-                                    </li>
+                                    </li> */}
                                     <li className='two wow fadeIn' data-wow-delay="1.5s">
                                         <span className=''>Empowering AI at Your Fingertips</span>
                                     </li>
@@ -256,7 +257,7 @@ export default function Home() {
                                     </div>       
                                 </div>        
 
-                                <a href="#" className='c-button fillBtn wow fadeInUp' data-wow-duration="0.5s">Contact Team</a>                      
+                                <Link href={'/contact'} className='c-button fillBtn wow fadeInUp' data-wow-duration="0.5s">Contact Team</Link>                      
                             </div>
                         </Col>
                     </Row>

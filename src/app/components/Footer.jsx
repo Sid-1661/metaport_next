@@ -6,6 +6,7 @@ import email from '../images/i-01.png'
 import call from '../images/i-02.png'
 import notification from '../images/i-03.png'
 import Logo from '../images/logo.svg'
+import Link from 'next/link';
 
 function Footer() {
     return (
@@ -16,7 +17,8 @@ function Footer() {
                         <Col md={12}>
                             <h2>Build, Innovate, Unleash with Metaport</h2>
 
-                            <a href="#" className='c-button fillBtn'>Contact Team</a>
+                            <Link href={'/contact'} className='c-button fillBtn'>Contact Team</Link>
+                            
                         </Col>
                     </Row>
                 </Container>

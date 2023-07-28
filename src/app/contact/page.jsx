@@ -15,10 +15,12 @@ import Call from '@/app/images/call.png'
 import Sms from '@/app/images/sms.png'
 import Location from '@/app/images/i-04.png'
 import Address from '@/app/images/i-05.png'
+import ScrollToTop from '../components/ScrollToTop';
 
 function Contact() {
     return (
-        <>
+        <>           
+
             <Header type="Contact"/> 
 
             <div className={Styles.FormWrap}>
@@ -101,8 +103,7 @@ function Contact() {
                 </Container>
             </div>
 
-            <Footer />
-
+            <Footer /> 
         </>
     )
 }
