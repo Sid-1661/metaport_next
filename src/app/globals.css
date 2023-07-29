@@ -17,7 +17,7 @@ img{
 	max-width: 100%;
 }
 
-a, .OurExpertise ul li, header.HeaderWrap .headerRight ul li a svg path{	
+a, .OurExpertise ul li, header.HeaderWrap .headerRight ul li a svg path, .BlogWrap{	
 	-moz-transition: all 300ms ease-in-out 0s;
 	-ms-transition: all 300ms ease-in-out 0s;
 	-o-transition: all 300ms ease-in-out 0s;
@@ -391,7 +391,7 @@ header.HeaderWrap .headerRight ul li.button a:hover{
 .ProgressWrap{
 	background: #FD046E;
 	position: relative;
-	padding: 220px 0px 80px;
+	padding: 80px 0px 80px;
 }
 
 .ProgressWrap img{
@@ -487,13 +487,14 @@ header.HeaderWrap .headerRight ul li.button a:hover{
 	transform: translate(-50%, 0px);
 }
 .ProgressContent ul li.two {
-    top: 365px;
+    /* top: 365px; */
+	top: 225px;
     text-align: right;
     width: 250px;
     left: 370px;
 }
 .ProgressContent ul li.three {
-    top: 370px;
+    top: 230px;
     text-align: left;
     width: 280px;
     right: 280px;
@@ -686,7 +687,8 @@ header.HeaderWrap .headerRight ul li.button a:hover{
 }
 
 .home-payments__globe-line .BlockContent svg{
-    position: relative;
+    position: relative; 
+	top: 0px; 
 }
 .wpb_wrapper{
 	position: relative;
@@ -714,6 +716,15 @@ header.HeaderWrap .headerRight ul li.button a:hover{
 	padding-top: 60px;
 }
 
+.ProcessWrap h2.Title{
+	background-color: #fff;
+    padding: 19px 60px;
+    display: inline-block;
+    color: #000;
+    line-height: 73px;
+    border-radius: 16px;
+}
+
 .BlockContent{
 	display: flex;
 }
@@ -723,7 +734,7 @@ header.HeaderWrap .headerRight ul li.button a:hover{
     left: 50%;
     top: 0;
     height: calc(100% - 100px);
-    transform: translate(-50%, 98px);
+    transform: translate(-50%, 220px);
 }
 
 .home-payments__lower-svg {
@@ -733,13 +744,13 @@ header.HeaderWrap .headerRight ul li.button a:hover{
 .home-payments__bottom.animated .home-payments__lower-svg path {
     -webkit-animation-name: draw;
     animation-name: draw;
-    -webkit-animation-duration: 1.2s;
-    animation-duration: 1.2s;
+    -webkit-animation-duration: 4.2s;
+    animation-duration: 4.2s;
 }
 
 .ProccessContent.left{
     width: 50%;
-    border-right: 7px solid;
+    /* border-right: 7px solid; */
     padding-right: 45px;
     text-align: right;
 }
@@ -747,7 +758,7 @@ header.HeaderWrap .headerRight ul li.button a:hover{
 .ProccessContent.right{
 	width: 50%;
     text-align: left;
-    border-left: 7px solid;
+    /* border-left: 7px solid; */
     padding-left: 45px;
 }
 
@@ -790,6 +801,12 @@ header.HeaderWrap .headerRight ul li.button a:hover{
     background-color: #43F8BE;
     padding: 45px 35px;
     border-radius: 14px;
+	top: 0px; 
+	position: relative;
+}
+
+.BlogWrap:hover{
+	top: 50px;
 }
 
 .BlogWrap img{
@@ -1483,6 +1500,7 @@ h4.c-rich-nav__heading-link a:hover span {
 	.ServiceDropWrap{
 		min-height: 525px;
 	} 
+
 	.gradientBubble{
 		width: 75px;
         height: 75px;
@@ -1561,6 +1579,10 @@ h4.c-rich-nav__heading-link a:hover span {
     .BlockContent{
         display: inherit;
     }
+
+	.BlockContent .wpb_wrapper{
+		display: none;
+	}
 
     .ProccessContent.right, .ProccessContent.left{
         width: 100%;
@@ -1711,4 +1733,79 @@ h4.c-rich-nav__heading-link a:hover span {
 		line-height: 28px;
 		font-weight: normal;
 	}
+
+	.gradientBubble{
+		width: 75px;
+        height: 75px;
+	}
+	.gradientBubble.bigger{
+		width: 112px;
+        height: 112px;
+	}
+	.gradientBubble.big{
+		width: 93px;
+        height: 93px;
+	}
+	.gradientBubble.small{
+		width: 66px;
+        height: 66px;
+	}
+	.gradientBubble:nth-child(1){}
+	.gradientBubble:nth-child(2){
+		left: 130px;
+	}
+	.gradientBubble:nth-child(3){
+		right: 0;
+		left: auto;
+	}
+	.gradientBubble:nth-child(4){
+		top: 250px;
+		right: auto;
+		left: 25px;
+		width: 75px;
+		height: 75px;
+	}
+	.gradientBubble:nth-child(5){
+		width: 112px;
+		height: 112px;
+		top: auto;
+		bottom: 80px;
+		right: 8px;
+	}
+	.gradientBubble:nth-child(6){
+		bottom: auto;
+    	top: 150px;
+	}
+	.gradientBubble:nth-child(7){
+		bottom: auto;
+		left: 115px;
+		top: 110px;
+	}
+	.gradientBubble:nth-child(8){
+		left: auto;
+		right: 0;
+		bottom: auto;
+		top: 200px;
+	}
+	.gradientBubble:nth-child(9){
+		right: auto;
+		left: 105px;
+		bottom: 100px;
+	}
+	.gradientBubble:nth-child(10){
+		bottom: 15px;
+		right: 105px;
+	}
+	.gradientBubble:nth-child(11){
+		left: 140px;
+    	bottom: 190px;
+	}
+	.gradientBubble:nth-child(12){
+		right: auto;
+		left: 13px;
+		bottom: 45px;
+	}
+    .gradientBubble h4{
+        font-size: 13.38px;
+    }
 }

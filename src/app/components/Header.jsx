@@ -4,10 +4,12 @@ import Logo from '../images/logo.svg'
 
 import Link from 'next/link';
 import Image from 'next/image';
+
 import TextSlider from './TextSlider';
 import AnimateButton from './AnimateButton';
 import HeroContent from './HeroContent';
 import Menu from './Menu';
+import ScrollToTop from './ScrollToTop';
 
 function Header({type}) {
 
@@ -50,6 +52,9 @@ function Header({type}) {
 
     return (
         <>
+
+        <ScrollToTop />
+
         <header className='HeaderWrap' ref={headerRef}>
             <Container>    
                 <div className="dFlex">
@@ -76,7 +81,7 @@ function Header({type}) {
             <div className={`MobileMenuWrap ${isDivVisible ? 'show' : ''}`}>
 
                 <a href="#" onClick={toggleDiv} className='closeMenu'>
-                    <span class="sidr-class-wpex-close__icon" aria-hidden="true">×</span>
+                    <span className="sidr-class-wpex-close__icon" aria-hidden="true">×</span>
                 </a>
                 <Menu /> 
             </div>            

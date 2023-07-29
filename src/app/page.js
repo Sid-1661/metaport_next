@@ -17,7 +17,7 @@ export default function Home() {
     const handleScroll = () => {
         const position = window.pageYOffset || document.documentElement.scrollTop;
 
-        console.log(position);
+        //console.log(position);
 
         if(position > 1700) { 
             setisInProgressView(true);              
@@ -28,7 +28,7 @@ export default function Home() {
             setIsInView(true);              
         }  
 
-        if(position > 4000){
+        if(position > 4250){
             setIsInLineView(true); 
         }
 
@@ -198,10 +198,15 @@ export default function Home() {
                                         <path className="top-line" d="M375 0, L375 61" stroke="#fff" strokeWidth="14" pathLength="1" fill="none"></path>
                                         <path className="bottom-line" d="M375 783, L375 883" stroke="#fff" strokeWidth="14" pathLength="1" fill="none"></path>
                                     </svg>
-                                )}                              
+                                )}          
+
+                                         
                             </div>
 
                             <div className="ProcessWrap home-payments__bottom animated">
+
+                                <h2 className='Title wow fadeIn mt-4'>BUILD BOLD</h2>             
+
                                 <div className="BlockContent home-payments__lower-svg">
                                     <div className="ProccessContent blank left"></div>    
                                     <div className="ProccessContent right">
@@ -211,6 +216,14 @@ export default function Home() {
                                         <p className='wow fadeInRight' data-wow-duration="0.5s">Our team of experts diligently analyzes your product, assembling a detailed roadmap that encompasses every specification and detail of your vision.</p>
                                         
                                     </div>       
+
+                                    <div className="wpb_wrapper">
+                                        {isInLineView && 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="1551" viewBox="0 0 15 1551">
+                                                <path className="lower-line" d="M7 0, L7 1300" stroke="#fff" strokeWidth="14" pathLength="1" fill="none"></path>
+                                            </svg>                                            
+                                        }
+                                    </div>
                                 </div>                     
 
                                 <div className="BlockContent home-payments__lower-svg">
@@ -219,15 +232,7 @@ export default function Home() {
 
                                         <p className='wow fadeInLeft' data-wow-duration="0.5s">We work hand in hand with your business department to architect and develop software solutions collaboratively delivering product updates through agile iterations.</p>
                                     </div>
-                                    <div className="ProccessContent blank right"></div>
-
-                                    {/* <div className="wpb_wrapper">
-                                        {isInLineView && 
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="618" viewBox="0 0 15 618">
-                                                <path className="lower-line" d="M7 0, L7 618" stroke="#fff" strokeWidth="14" pathLength="1" fill="none"></path>
-                                            </svg>
-                                        }
-                                    </div> */}
+                                    <div className="ProccessContent blank right"></div> 
                                 </div>
 
                                 <div className="BlockContent">
