@@ -28,10 +28,12 @@ function Header({ type }) {
         const handleScroll = () => {
             const header = headerRef.current;
 
-            if (window.pageYOffset > 0) {
-                header.classList.add('sticky');
-            } else {
-                header.classList.remove('sticky');
+            if (header.classList.length > 0) {
+                if (window.pageYOffset > 0) {
+                    header.classList.add('sticky');
+                } else {
+                    header.classList.remove('sticky');
+                }
             }
         };
 
