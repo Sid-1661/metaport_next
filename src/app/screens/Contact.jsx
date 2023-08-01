@@ -1,14 +1,13 @@
-import { useTranslation } from "react-i18next";
-import { Link } from 'react-router-dom';
-import Header from '../components/Header';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import Header from '../components/Header'
 
 function Contact() {
-    const { t } = useTranslation();
     return (
         <>
-            <Header type="Single" />
+            <Header type="Single"/>
 
-            <div>{t("Contact")} <Link to="/"> {t("Home")}</Link> </div>
+            <div>Contact <Link to="/"> Home</Link> </div>
 
         </>
     )

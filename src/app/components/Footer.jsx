@@ -1,13 +1,13 @@
+import React from 'react'
+import { Col, Container, Row } from 'reactstrap'
 import Image from 'next/image';
-import { Col, Container, Row } from 'reactstrap';
 
+import email from '../images/i-01.png'
+import call from '../images/i-02.png'
+import notification from '../images/i-03.png'
+import Logo from '../images/logo.svg'
 import Link from 'next/link';
 import { useTranslation } from "react-i18next";
-import email from '../images/i-01.png';
-import call from '../images/i-02.png';
-import notification from '../images/i-03.png';
-import Logo from '../images/logo.svg';
-
 
 function Footer() {
     const { t } = useTranslation();

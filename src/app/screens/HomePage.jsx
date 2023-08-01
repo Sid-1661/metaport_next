@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Col, Container, Row } from 'reactstrap'
+import WOW from 'wowjs'; 
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 import { useTranslation } from "react-i18next";
-import { Col, Container, Row } from 'reactstrap';
-import WOW from 'wowjs';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
 
 function HomePage() {
     const { t } = useTranslation();

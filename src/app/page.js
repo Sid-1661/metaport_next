@@ -1,14 +1,15 @@
 "use client"; // This is a client component 👈🏽
+import Image from 'next/image'
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
-import { useTranslation } from "react-i18next";
-import { Col, Container, Row } from 'reactstrap';
+import styles from './page.module.css'
+import React, { useState, useEffect } from 'react';
+import { Col, Container, Row } from 'reactstrap'
 import WOW from 'wowjs';
-import Footer from './components/Footer';
-import Header from './components/Header';
+import Header from './components/Header'
+import Footer from './components/Footer'
 import ProcessTextSlider from './components/ProcessTextSlider';
-
-
+import { useTranslation } from "react-i18next";
+ 
 export default function Home() {
     const { t } = useTranslation();
     const [isInView, setIsInView] = useState(false);

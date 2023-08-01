@@ -1,78 +1,77 @@
-.mapWrap {
+.mapWrap{
     background: var(--theme-purple);
     padding-top: 80px;
 }
 
-.FormWrap {
+.FormWrap{
     padding: 80px 0px;
     /* background: var(--theme-green); */
     background-image: url('/images/bg-04.png');
     background-color: #44F9C3;
 }
 
-.FormWrap h3 {
+.FormWrap h3{
     font-size: 78px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     margin-top: 0px;
 }
 
-.FormWrap form {
+.FormWrap form{
     background: #fff;
     padding: 32px;
     border-radius: 16px;
 }
 
-.FormWrap input {
+.FormWrap input{
     height: 60px;
     padding: 13px 25px;
     border: 2px solid #B8B8B8;
 }
 
-.FormWrap textarea {
+.FormWrap textarea{
     height: 141px;
     padding: 13px 25px;
     border: 2px solid #B8B8B8;
 }
 
-.FormWrap label {
+.FormWrap label{
     margin-bottom: 11px;
     font-family: 'Anton', sans-serif;
     font-size: 18px;
     color: #000;
 }
 
-.AboutContent {
+.AboutContent{
     background-color: var(--theme-color);
     padding: 80px 0px;
     position: relative;
 }
 
-.AboutContent h2,
-.AboutContent p {
+.AboutContent h2, .AboutContent p{
     color: #fff;
 }
 
-.AboutContent h2 {
+.AboutContent h2{
     font-size: 78px;
     line-height: 96px;
     text-transform: uppercase;
 }
 
-.CEOText {
-    background: rgb(253, 253, 56);
-    background: linear-gradient(232deg, rgba(253, 253, 56, 1) 12%, rgba(212, 212, 212, 1) 100%);
+.CEOText{
+    background: rgb(253,253,56);
+    background: linear-gradient(232deg, rgba(253,253,56,1) 12%, rgba(212,212,212,1) 100%);
 }
 
-.CEOText .FlexRow {
+.CEOText .FlexRow{
     align-items: center;
     position: relative;
+    z-index: 999;
 }
 
-.CeoImage {
+.CeoImage{
     height: auto;
 }
-
-.CEOText h3 {
+.CEOText h3{
     font-size: 36px;
     line-height: 46px;
     text-transform: uppercase;
@@ -80,34 +79,32 @@
     margin-bottom: 25px;
     margin-top: 15px;
 }
-
-.CEOText h5 {}
-
-.CEOText p {}
+.CEOText h5{}
+.CEOText p{}
 
 
-.InfoWidget {}
+.InfoWidget{
 
-.InfoWidget h4 {
+}
+.InfoWidget h4{
     font-size: 36px;
     color: #fff;
     line-height: 46px;
 }
-
-.InfoWidget p {
+.InfoWidget p{
     font-size: 24px;
     color: #fff;
     line-height: 34px;
 }
 
-.valuesWrap {
+.valuesWrap{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 35px;
 }
 
-.IconImage {
+.IconImage{
     width: 131px;
     height: 131px;
     border-radius: 100%;
@@ -116,7 +113,7 @@
     padding: 22px 0px;
 }
 
-.valuesWrap h2 {
+.valuesWrap h2{
     margin-left: -20px;
     margin-bottom: 0px;
     font-size: 36px;
@@ -125,37 +122,35 @@
 
 
 @media (max-width: 991px) {
-    .FormWrap {
+    .FormWrap{
         padding: 50px 0px;
     }
-
-    .FormWrap h3 {
+    .FormWrap h3{
         margin-top: 0px;
         margin-bottom: 10px;
         font-size: 40px;
     }
+    .FormWrap img{ 
 
-    .FormWrap img {}
+    }
 
-    .valuesWrap h2 {
+    .valuesWrap h2{
         font-size: 20px;
         line-height: 30px;
     }
 
-    .addressInfo {
+    .addressInfo{
         text-align: center;
     }
-
-    .addressInfo p {
+    .addressInfo p{
         justify-content: center;
     }
 
-    .mapWrap {
+    .mapWrap{
         padding-top: 30px;
     }
-
-    .mapWrap img {
-        height: auto;
+    .mapWrap img{
+        height: auto;        
     }
 
     .CEOText {
@@ -163,35 +158,27 @@
         padding-top: 20px;
     }
 
-    .Blockquote {
+    .Blockquote{
         width: 30px;
         height: auto;
-        z-index: 9999;
     }
 
-    .CEOText .FlexRow {
+    .CEOText .FlexRow{
         align-items: flex-end;
-        background: lightgray;
     }
-
-    .CeoImage {
+    .CeoImage{
         margin-bottom: 0px;
-        object-fit: cover;
-        z-index: 1111;
     }
-
-    .CEOText h3 {
+    .CEOText h3{
         padding-right: 0px;
         font-size: 25px;
         line-height: 35px;
     }
-
-    .AboutContent h2 {
+    .AboutContent h2{
         font-size: 60px;
         line-height: 70px;
     }
-
-    .AboutContent p {
+    .AboutContent p{
         text-align: justify;
     }
 }

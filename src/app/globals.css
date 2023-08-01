@@ -34,7 +34,7 @@ body{
 
 }
 
-h1, h2, h3 h4, h5, h6, .OurExpertise ul li{
+h1, h2, h3, h4, h5, h6, .OurExpertise ul li{
   	font-family: 'Anton', sans-serif;
 }
 
@@ -196,8 +196,6 @@ h2.Title span{
 	color: var(--theme-color); 
 	display: block;
 }
-
-
 
 /* Header */
 
@@ -513,7 +511,7 @@ header.HeaderWrap .headerRight ul li.button a:hover{
     top: auto;
     text-align: right;
     width: 240px;
-    left: 320px;
+    left: 335px;
     bottom: 165px;
 }
 .ProgressContent ul li.four:after{	
@@ -523,10 +521,10 @@ header.HeaderWrap .headerRight ul li.button a:hover{
 	right: -188px;
 }
 .ProgressContent ul li.five {
-    top: 580px;
+    top: 443px;
     text-align: left;
     width: 200px;
-    right: 338px;
+    right: 355px;
 }
 .ProgressContent ul li.five:after{
 	right: auto;
@@ -1083,19 +1081,19 @@ p.copyright a{
 @media (max-width:1600px) {
 
 	.ProgressContent ul li.two{
-		left: 129px;
+		left: 170px;
 	}
 
 	.ProgressContent ul li.three{
-		right: 130px;
+		right: 85px;
 	}
 
 	.ProgressContent ul li.four{
-		left: 150px;
+		left: 130px;
 	}
 
 	.ProgressContent ul li.five{
-		right: 135px;
+		right: 140px;
 	}
 
 } 
@@ -1346,8 +1344,21 @@ h4.c-rich-nav__heading-link a:hover span {
 
 /* End Menu Css*/
 
+.LogoWrap img{
+	width: 209px;
+	height: auto;
+}
 /* Responsive */
+@media (max-width: 1024px) {
+	header.HeaderWrap .menu ul li a{
+		font-size: 14px;
+		padding: 0 5px;
+	}
 
+	.LogoWrap img{
+		width: 150px;
+	}
+}
 @media (max-width: 991px) {
     .HeaderWrap{
         display: none;
@@ -1382,6 +1393,25 @@ h4.c-rich-nav__heading-link a:hover span {
 
 	.MobileMenuWrap.show {
 		right: 0;
+	}
+
+	.MobileMenuWrap .menu ul li.cmm-item-has-content{
+		position: relative;
+	}
+
+	.MobileMenuWrap .menu ul li.cmm-item-has-content::after {
+		content: "\f105";
+		font-family: "Font Awesome 5 Free";
+		color: #fff;
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		transform: translate(0px, -50%);
+		background: #262626;
+	}
+
+	.MobileMenuWrap .menu ul li a.wpex-no-underline{
+		color: #000!important;
 	}
 
 	/* .MobileMenuWrap.show:before {
@@ -1423,7 +1453,7 @@ h4.c-rich-nav__heading-link a:hover span {
 	.MobileMenuWrap .menu ul li a{
 		padding: 15px 20px;
 		display: block;
-		color: #fff;
+		color: #fff!important;
 	}
 
 	.MobileMenuWrap .headerRight ul{
@@ -1610,7 +1640,7 @@ h4.c-rich-nav__heading-link a:hover span {
 	}
 
     .home-payments__globe-line svg{
-        top: -175px;
+        /* top: -175px; */
     }
 
     h2.Title{
@@ -1630,9 +1660,18 @@ h4.c-rich-nav__heading-link a:hover span {
 		font-size: 14px;
 		line-height: 24px;
 	}
+
+	.ProcessWrap h2.Title{
+		padding: 5px 30px;
+	}
 }
 
 @media (max-width: 767px) {
+	.ProcessWrap h2.Title {
+		padding: 10px 30px;
+		line-height: normal;
+	}
+
 	.mobileHeader{
 		padding: 15px;
 	}

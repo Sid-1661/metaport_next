@@ -1,11 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
-import { Container } from 'reactstrap';
+import { Container } from 'reactstrap'
 
 import Link from 'next/link';
-import { useTranslation } from "react-i18next";
-import styles from './css/HeroContent.module.css';
+import TextSlider from './TextSlider';
+import AnimateButton from './AnimateButton';
+import styles from './css/HeroContent.module.css'
 import Icon from '@mdi/react';
 import { mdiArrowDownBox } from '@mdi/js';
+import { useTranslation } from "react-i18next";
 
 function HeroContent({ interval = 3000 }) {
     const { t } = useTranslation();
@@ -82,7 +84,7 @@ function HeroContent({ interval = 3000 }) {
             </Container>
             <br />
            
-                <Icon className={[styles.scrollDown]} onClick={scrollToBottom} path={mdiArrowDownBox} size={5} > Go To Bottom</Icon>
+                <Icon className={[styles.scrollDown]} onClick={scrollToBottom} path={mdiArrowDownBox} size={3} > Go To Bottom</Icon>
         </div>
     )
 }
