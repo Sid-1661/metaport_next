@@ -63,7 +63,7 @@ function Header({ type }) {
                     <div className="dFlex">
                         <div className='LogoWrap'>
                             <Link href={"/"}>
-                                <Image src={Logo} alt="Metaport" style={{ width: 209, height: 'auto' }} priority={true} />
+                                <Image src={Logo} alt="Metaport" priority={true} />
                             </Link>
                         </div>
 

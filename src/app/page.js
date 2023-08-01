@@ -29,7 +29,7 @@ export default function Home() {
             setIsInView(true);
         }
 
-        if (position > 4250) {
+        if (position > 4100) {
             setIsInLineView(true);
         }
 

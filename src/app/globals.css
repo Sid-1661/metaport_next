@@ -403,8 +403,8 @@ header.HeaderWrap .headerRight ul li.button a:hover{
 
 .ProgressWrap .ProgressTitle {
     position: absolute;
-    top: 60%;
-    transform: translate(0px, -60%);
+    top: 50%;
+    transform: translate(0px, -50%);
     width: 100%;
     left: 0px;
 }
