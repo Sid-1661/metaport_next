@@ -9,7 +9,10 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import ProcessTextSlider from './components/ProcessTextSlider';
 import { useTranslation } from "react-i18next";
- 
+import Icon from '@mdi/react';
+import { mdiChevronTripleDown  } from '@mdi/js';
+import { mdiChevronTripleUp  } from '@mdi/js';
+
 export default function Home() {
     const { t } = useTranslation();
     const [isInView, setIsInView] = useState(false);
@@ -42,6 +45,25 @@ export default function Home() {
         wow.init();
     }, []);
 
+
+    const [scrollTrigger, setScrollTrigger] = useState(false);
+
+    const scrollToBottom = () => {
+        setScrollTrigger(true)
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth',
+        });
+    };
+
+    const scrollToTop = () => {
+        setScrollTrigger(false)
+        window.scrollTo({
+            top: document.documentElement.clientTop,
+            behavior: 'smooth',
+        });
+    };
+
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -55,11 +77,18 @@ export default function Home() {
         { content: '100+ Solutions', color: '#fff' },
     ];
 
+
+
     return (
         <main>
-
+            <div className="fixed">
+            {!scrollTrigger ? (
+                <Icon className="scrollDown" onClick={scrollToBottom} path={mdiChevronTripleDown } size={3} > </Icon>
+            ) : (
+                <Icon className="scrollUp" onClick={scrollToTop} path={mdiChevronTripleUp } size={3} > </Icon>
+            )}
+            </div>
             <Header type="Home" />
-
             <div className="OurExpertise">
                 <Container >
                     <Row>
@@ -94,12 +123,12 @@ export default function Home() {
                         <Col md={12} className='text-center'>
 
                             <div className='ProgressContentWrap'>
-                                <img src="images/001.png" alt="" className='wow zoomIn' data-wow-duration="1.3s" data-wow-delay="0.5s" />
+                                <img src="images/001.png" alt="" className='wow zoomIn' data-wow-duration="0.7s" data-wow-delay="0.5s" />
 
                                 <div className="ProgressTitle">
-                                    <img src="images/002.png" alt="" className='wow zoomIn' data-wow-duration="1.3s" data-wow-delay="1.3s" /> <br />
+                                    <img src="images/002.png" alt="" className='wow zoomIn' data-wow-duration="0.7s" data-wow-delay="0.5s" /> <br />
 
-                                    <Link href={'/contact'} className='c-button fillBtn Green wow zoomIn' data-wow-delay="1.3s">{t("Get Started")}</Link>
+                                    <Link href={'/contact'} className='c-button fillBtn Green wow zoomIn' data-wow-delay="0.3s">{t("Get Started")}</Link>
                                 </div>
                             </div>
 
@@ -108,21 +137,21 @@ export default function Home() {
                                     {/* <li className='one wow fadeIn' data-wow-delay="1.5s">
                                         <span>Accelerate Global Reach</span>
                                     </li> */}
-                                    <li className='two wow fadeIn' data-wow-delay="1.5s">
+                                    <li className='two wow fadeIn' data-wow-delay="0.8s">
                                         <span className=''>{t("Empowering AI at Your Fingertips")}</span>
                                     </li>
-                                    <li className='three wow fadeIn' data-wow-delay="1.5s">
+                                    <li className='three wow fadeIn' data-wow-delay="0.8s">
                                         <span>{t("Embrace the Feature of Decentralisation")}</span>
                                     </li>
-                                    <li className='four wow fadeIn' data-wow-delay="1.5s">
+                                    <li className='four wow fadeIn' data-wow-delay="0.8s">
                                         <span>{t("Bridging Innovation to Implementation")}</span>
                                     </li>
-                                    <li className='five wow fadeIn' data-wow-delay="1.5s">
+                                    <li className='five wow fadeIn' data-wow-delay="0.8s">
                                         <span>{t("Amplifying Your Digital Presence")}</span>
                                     </li>
                                 </ul>
 
-                                <a href="#" className='c-button fillBtn Green wow zoomIn' data-wow-delay="1.3s">{t("Get Started")}</a>
+                                <a href="#" className='c-button fillBtn Green wow zoomIn' data-wow-delay="0.3s">{t("Get Started")}</a>
                             </div>
                         </Col>
                     </Row>

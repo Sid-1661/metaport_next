@@ -5,8 +5,8 @@ import Link from 'next/link';
 import TextSlider from './TextSlider';
 import AnimateButton from './AnimateButton';
 import styles from './css/HeroContent.module.css'
-import Icon from '@mdi/react';
-import { mdiArrowDownBox } from '@mdi/js';
+// import Icon from '@mdi/react';
+// import { mdiArrowDownBox } from '@mdi/js';
 import { useTranslation } from "react-i18next";
 
 function HeroContent({ interval = 3000 }) {
@@ -24,12 +24,12 @@ function HeroContent({ interval = 3000 }) {
 
     const timeoutRef = useRef(null);
 
-    const scrollToBottom = () => {
-        window.scrollTo({
-            top: document.documentElement.scrollHeight,
-            behavior: 'smooth',
-        });
-    };
+    // const scrollToBottom = () => {
+    //     window.scrollTo({
+    //         top: document.documentElement.scrollHeight,
+    //         behavior: 'smooth',
+    //     });
+    // };
 
 
     useEffect(() => {
@@ -84,7 +84,7 @@ function HeroContent({ interval = 3000 }) {
             </Container>
             <br />
            
-                <Icon className={[styles.scrollDown]} onClick={scrollToBottom} path={mdiArrowDownBox} size={3} > Go To Bottom</Icon>
+                {/* <Icon className={[styles.scrollDown]} onClick={scrollToBottom} path={mdiArrowDownBox} size={3} > Go To Bottom</Icon> */}
         </div>
     )
 }

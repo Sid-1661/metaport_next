@@ -32,7 +32,7 @@
     }     
 }
 
-.scrollDown {
+/* .scrollDown {
     color: white;
     font-size: 20px;
     transition: color 0.2s ease-in-out;
@@ -41,8 +41,10 @@
 
 .scrollDown:hover {
     color: #FD046E;
+    position: "fixed";
 }
 
 .scrollDown:active {
     color: black;
-}
+    position: "fixed";
+} */

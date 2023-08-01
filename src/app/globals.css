@@ -1850,3 +1850,43 @@ h4.c-rich-nav__heading-link a:hover span {
         font-size: 13.38px;
     }
 }
+
+
+.scrollDown {
+	color: white;
+	font-size: 20px;
+	/* transition: color 0.5s ease-in-out; */
+	
+	animation-name: scrollColor;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.scrollDown:hover {
+	color: #FD046E;
+}
+
+.scrollDown:active {
+	color: black;
+}
+
+.fixed {
+	position: fixed;
+	bottom: 100px;
+	z-index: 999;
+	justify-content: center;
+	align-items: center;
+	animation-name: scrollColor;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes scrollColor {
+  0%   {color:#FF007A; bottom: 110px;}
+  20%  {color:rgb(133,34,245); bottom: 105px;}
+  40%  {color:#43F8BE; bottom: 100px;}
+  60%  {color:black; bottom: 105px;}
+  80% {color:white; bottom: 105px;}
+	100% {color:#FF007A; bottom: 110px;}
+}
