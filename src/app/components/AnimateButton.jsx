@@ -19,7 +19,7 @@ function AnimateButton() {
   const buttonColorClass = `button-color-${currentColorIndex}`;
 
   return (
-    <Link href={'/'} className={`c-button ${buttonColorClass}`}> {t("Why Choose Us")}</Link>
+    <Link href={'/'} className={`c-button ${buttonColorClass}`}> {t("About Us")}</Link>
   )
 }
 

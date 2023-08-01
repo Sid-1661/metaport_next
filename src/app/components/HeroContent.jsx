@@ -4,6 +4,8 @@ import { Container } from 'reactstrap';
 import Link from 'next/link';
 import { useTranslation } from "react-i18next";
 import styles from './css/HeroContent.module.css';
+import Icon from '@mdi/react';
+import { mdiArrowDownBox } from '@mdi/js';
 
 function HeroContent({ interval = 3000 }) {
     const { t } = useTranslation();
@@ -19,6 +21,14 @@ function HeroContent({ interval = 3000 }) {
     const colors = ['red', 'blue', 'green'];
 
     const timeoutRef = useRef(null);
+
+    const scrollToBottom = () => {
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth',
+        });
+    };
+
 
     useEffect(() => {
         return () => {
@@ -41,6 +51,8 @@ function HeroContent({ interval = 3000 }) {
 
     return (
         <div className="HeroContent">
+
+
             <Container>
                 <h1>{t("Engineering")}<br /> {t("the modern age with")}</h1>
 
@@ -62,11 +74,15 @@ function HeroContent({ interval = 3000 }) {
                 <div className="dFlex">
 
                     {/* <AnimateButton />  */}
-                    <Link href={'/'} className={`c-button ${buttonColorClass}`}> {t("Why Choose Us")}</Link>
+                    <Link href={'/about'} className={`c-button ${buttonColorClass}`}> {t("About Us")}</Link>
 
                     <Link href={'/contact'} className='c-button whiteBtn' style={{ marginLeft: 25 }}>{t("Contact Team")}</Link>
                 </div>
+
             </Container>
+            <br />
+           
+                <Icon className={[styles.scrollDown]} onClick={scrollToBottom} path={mdiArrowDownBox} size={5} > Go To Bottom</Icon>
         </div>
     )
 }

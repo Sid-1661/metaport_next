@@ -20,6 +20,7 @@ function HomePage() {
         }
     };
 
+    
     React.useEffect(() => {
         const wow = new WOW.WOW();
         wow.init();
@@ -35,6 +36,7 @@ function HomePage() {
     return (
         <>
             <Header type="Home" />
+            
 
             <div className="OurExpertise">
                 <Container >
@@ -286,7 +288,6 @@ function HomePage() {
                     </Row>
                 </Container>
             </div>
-
             <Footer />
         </>
     )

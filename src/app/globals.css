@@ -34,7 +34,7 @@ body{
 
 }
 
-h1, h2, h3, h4, h5, h6, .OurExpertise ul li{
+h1, h2, h3 h4, h5, h6, .OurExpertise ul li{
   	font-family: 'Anton', sans-serif;
 }
 
@@ -196,6 +196,8 @@ h2.Title span{
 	color: var(--theme-color); 
 	display: block;
 }
+
+
 
 /* Header */
 
