@@ -74,9 +74,9 @@ function About() {
                             <p>{t("We are a team of relentless dreamers, trailblazers, and visionary thinkers. Innovation is not just a buzzword for us - it is ingrained in our DNA. We combine cutting-edge technology with refined craftsmanship to deliver solutions that transcend expectations. We believe that the best ideas emerge when diverse minds come together in a harmonious symphony of creativity.")}</p>
                         </Col>
                         <Col md={6}>
-                            <h2>{t("Who are we")}</h2>
+                            <h2>{t("What we do")}</h2>
 
-                            <p>{t("We are a team of relentless dreamers, trailblazers, and visionary thinkers. Innovation is not just a buzzword for us - it is ingrained in our DNA. We combine cutting-edge technology with refined craftsmanship to deliver solutions that transcend expectations. We believe that the best ideas emerge when diverse minds come together in a harmonious symphony of creativity.")}</p>
+                            <p>{t("Our areas of expertise span a wide range of domains, including software development, digital strategy, user experience design, and emerging technologies. Our team of brilliant minds combines cutting-edge technologies with visionary thinking to weave magic into every line of code and every pixel of design. We don't just work for our clients; we work with them.")}</p>
                         </Col>
                     </Row>
                 </Container>

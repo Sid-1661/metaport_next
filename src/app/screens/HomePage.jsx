@@ -87,7 +87,7 @@ function HomePage() {
                                         <span className=''>{t("Empowering AI at Your Fingertips")}</span>
                                     </li>
                                     <li className='three wow zoomInLeft' data-wow-delay="0.5s">
-                                        <span>{t("Embrace the Feature of Decentralisation")}</span>
+                                        <span>{t("Embrace the Future of Decentralisation")}</span>
                                     </li>
                                     <li className='four wow zoomInRight' data-wow-delay="0.7s">
                                         <span>{t("Bridging Innovation to Implementation")}</span>

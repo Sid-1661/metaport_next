@@ -10,9 +10,10 @@ import AnimateButton from './AnimateButton';
 import HeroContent from './HeroContent';
 import Menu from './Menu';
 import ScrollToTop from './ScrollToTop';
+import { useTranslation } from "react-i18next";
 
 function Header({type}) {
-
+    const { t } = useTranslation();
     const [isDivVisible, setIsDivVisible] = useState(false);    
     const headerRef = useRef(); 
 
@@ -107,9 +108,9 @@ function Header({type}) {
                 
                 <div className="HeroContent text-center">
                     <Container>
-                        <h3>About Us</h3>
-                        <h1>Tech Maverick</h1> 
-                        <p>Metaport, a prominent software development and IT consulting enterprise headquartered in Dubai, stands as a leading authority embracing versatility and innovation. We are the visionary trailblazers who not only provide a wide range of top-notch software applications but also craft captivating in-house software products that redefine the boundaries of innovation.</p>
+                        <h3>{t("About Us")}</h3>
+                        <h1>{t("Tech Maverick")}</h1> 
+                        <p>{t("Metaport, a prominent software development and IT consulting enterprise headquartered in Dubai, stands as a leading authority embracing versatility and innovation. We are the visionary trailblazers who not only provide a wide range of top-notch software applications but also craft captivating in-house software products that redefine the boundaries of innovation.")}</p>
                     </Container>
                 </div>
             </div>
@@ -121,8 +122,8 @@ function Header({type}) {
                 
                 <div className="HeroContent text-center">
                     <Container>
-                        <h1>Get in touch</h1> 
-                        <p>At metaport, we provide static websites to our clients as well as we make fully functional web app portals using modern technologies.</p>
+                        <h1>{t("Get in touch")}</h1> 
+                        <p>{t("We build powerful modern tech solutions to accelerate business growth, unlocking full potential with smart tech innovations from cloud-based solutions to AI-powered innovations. Let's embark on this thrilling journey together.")}</p>
                     </Container>
                 </div>
             </div>
