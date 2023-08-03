@@ -1881,6 +1881,21 @@ h4.c-rich-nav__heading-link a:hover span {
   animation-iteration-count: infinite;
 }
 
+.SrcollNext {
+	position: absolute;
+	left: 50%;
+	transform: translate(0px, -50%);
+	bottom: -20px;
+	z-index: 999;
+	background: rgba(0, 0, 0, 0.3);
+	text-align: center;
+	color: #fff;
+	padding: 5px 20px 0;
+	font-size: 30px;
+	border-radius: 50px 50px 0 0;
+	line-height: normal;
+cursor: pointer;
+}
 
 @keyframes scrollColor {
   0%   {color:#FF007A; bottom: 110px;}

@@ -8,9 +8,9 @@ import Header from '../components/Header'
 import Footer from '../components/Footer';
 import Styles from './About.module.css'
 
-import CEOImage from '@/app/images/004.png'
-import ValIcon from '@/app/images/i-06.png'
-import Blockquote from '@/app/images/i-07.png'
+import CEOImage from '../images/004.png'
+import ValIcon from '../images/i-06.png'
+import Blockquote from '../images/i-07.png'
 import { useTranslation } from "react-i18next";
 
 function About() {

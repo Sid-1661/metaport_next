@@ -8,13 +8,13 @@ import Header from '../components/Header'
 import Footer from '../components/Footer';
 import Styles from './Contact.module.css'
 
-import MapImage from '@/app/images/bg-03.png'
-import SendIcon from '@/app/images/bg-04.png'
-import Building from '@/app/images/001.png'
-import Call from '@/app/images/call.png'
-import Sms from '@/app/images/sms.png'
-import Location from '@/app/images/i-04.png'
-import Address from '@/app/images/i-05.png'
+import MapImage from '../images/bg-03.png'
+import SendIcon from '../images/bg-04.png'
+import Building from '../images/001.png'
+import Call from '../images/call.png'
+import Sms from '../images/sms.png'
+import Location from '../images/i-04.png'
+import Address from '../images/i-05.png'
 import ScrollToTop from '../components/ScrollToTop';
 import { useTranslation } from "react-i18next";
 
