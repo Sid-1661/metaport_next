@@ -98,15 +98,15 @@ function Contact() {
                             <div className={Styles.addressInfo}>
                                 <Image src={Location} alt='UAE Dubai' width={84} height={84} className={Styles.Icon} />
 
-                                <p>{t("Office 903, Grovenor Business Tower, Barsha Height (Tecom), Dubai")}</p>
+                                <p>{t("Unit 1, Level G, Emirates Towers Boulevard, Dubai, UAE")}</p>
                             </div>
                         </Col>
                         <Col md={4}>
                             <div className={Styles.addressInfo}>
                                 <Image src={Address} alt='UAE Dubai' width={84} height={84} className={Styles.Icon} />
 
-                                <p><Image src={Call} alt='UAE Dubai' /> +971 55 1345683</p>
-                                <p><Image src={Sms} alt='UAE Dubai' /> info@metaport.com</p>
+                                <p><Image src={Call} alt='UAE Dubai' /> +97 154 374 5479</p>
+                                <p><Image src={Sms} alt='UAE Dubai' />  info@metaports.co</p>
                             </div>
                         </Col>
                     </Row>
