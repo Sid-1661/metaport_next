@@ -37,7 +37,7 @@ function Header({ type }) {
         const handleScroll = () => {
             const header = headerRef.current;
 
-            if (window.pageYOffset > 0) {
+            if (header && window.pageYOffset > 0) {
                 header.classList.add('sticky');
             } else {
                 header.classList.remove('sticky');
@@ -81,7 +81,7 @@ function Header({ type }) {
 
             <header className='mobileHeader'>
                 <Link href={"/"}>
-                    <Image src={Logo} alt="Metaport" style={{ width: 209, height: 'auto' }} priority={true} />
+                    <Image src={Logo} alt="Metaport" width={209} height={"auto"} priority={true} />
                 </Link>
 
                 <a href="#" onClick={toggleDiv} className='OpenMenu'>
