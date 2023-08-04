@@ -81,7 +81,7 @@ function Footer() {
 
                                     <div>
                                         <h5>Email</h5>
-                                        <p>business@metaport.com</p>
+                                        <p>business@metaports.co</p>
                                     </div>
                                 </div>
                                 <div className="inquiry">
@@ -89,7 +89,7 @@ function Footer() {
 
                                     <div>
                                         <h5>Phone</h5>
-                                        <p>+96 6544 54778</p>
+                                        <p>+97 154 374 5479</p>
                                     </div>
 
                                 </div>
@@ -97,7 +97,7 @@ function Footer() {
                                     <Image src={notification} alt="Notification" />
                                     <div>
                                         <h5>{t("Location")}</h5>
-                                        <p>Sheikh Mohammed Bin Rashed Boulevard Downtown Dubai, PO Box 123234 Dubai, UAE</p>
+                                        <p>Unit 1, Level G, Emirates Towers Boulevard, Dubai, UAE</p>
                                     </div>
                                 </div>
                             </div>
