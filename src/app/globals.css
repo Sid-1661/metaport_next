@@ -1883,7 +1883,7 @@ h4.c-rich-nav__heading-link a:hover span {
 
 .SrcollNext {
 	position: absolute;
-	left: 50%;
+	left: 48.5%;
 	transform: translate(0px, -50%);
 	bottom: -20px;
 	z-index: 999;
