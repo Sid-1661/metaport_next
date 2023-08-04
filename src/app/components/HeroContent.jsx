@@ -76,7 +76,7 @@ function HeroContent({ interval = 3000 }) {
                 <div className="dFlex">
 
                     {/* <AnimateButton />  */}
-                    <Link href={'/about'} className={`c-button ${buttonColorClass}`}> {t("About Us")}</Link>
+                    <Link href={'/about'} className={`c-button ${buttonColorClass}`}> {t("Why Choose Us")}</Link>
 
                     <Link href={'/contact'} className='c-button whiteBtn' style={{ marginLeft: 25 }}>{t("Contact Team")}</Link>
                 </div>

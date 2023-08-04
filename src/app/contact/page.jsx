@@ -25,9 +25,10 @@ function Contact() {
         const data = new FormData(e.currentTarget);
         try {
             const response = await fetch('/api/contact', {
-                method: 'post',
+                method: 'POST',
                 body: new URLSearchParams(data),
             });
+            console.log(response)
             if (!response.ok) {
                 throw new Error(`Invalid response: ${response.status}`);
             }
