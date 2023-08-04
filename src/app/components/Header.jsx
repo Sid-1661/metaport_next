@@ -38,9 +38,12 @@ function Header({ type }) {
             const header = headerRef.current;
 
             if (header && window.pageYOffset > 0) {
-                header.classList.add('sticky');
+                // header.classList.add('sticky');
+                header.style.position = 'fixed';
+                header.style.top = '0';
             } else {
-                header.classList.remove('sticky');
+                // header.classList.remove('sticky');
+                header.style.position = 'static';
             }
         };
 
