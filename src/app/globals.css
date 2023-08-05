@@ -2101,7 +2101,7 @@ h4.c-rich-nav__heading-link a:hover span {
 	}
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
 	.HeaderWrap {
 		display: none;
 	}
