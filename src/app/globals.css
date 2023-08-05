@@ -553,7 +553,7 @@ header.HeaderWrap .headerRight ul li.button a:hover {
 	transform: translate(-50%, 0px);
 }
 
-@media (min-width: 1670px) {
+@media (min-width: 3670px) {
   .ProgressContent ul li.two {
 		top: 225px;
 		text-align: right;
@@ -1795,7 +1795,7 @@ p.copyright a {
 	/* animation: rotate 50s infinite linear; */
 }
 
-@media (max-width:1600px) {
+@media (max-width:2500px) {
 
 	.ProgressContent ul li.two {
 		left: 170px;
