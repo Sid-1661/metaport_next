@@ -76,7 +76,6 @@ function Footer() {
                                 <h3>{t("Business Inquiry")}</h3>
 
                                 <div className="inquiry">
-                                    {/* <img src={email} alt="" /> */}
                                     <Image src={email} alt="Email" />
 
                                     <div>

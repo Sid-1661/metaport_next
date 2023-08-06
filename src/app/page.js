@@ -80,13 +80,6 @@ export default function Home() {
 
     return (
         <main>
-            {/* <div className="fixed">
-            {!scrollTrigger ? (
-                <Icon className="scrollDown" onClick={scrollToBottom} path={mdiChevronTripleDown } size={3} > </Icon>
-            ) : (
-                <Icon className="scrollUp" onClick={scrollToTop} path={mdiChevronTripleUp } size={3} > </Icon>
-            )}
-            </div> */}
             <Header type="Home" />
             <div className="OurExpertise">
                 <Container>

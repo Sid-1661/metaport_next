@@ -236,7 +236,7 @@ h2.Title span {
 
 header.HeaderWrap {
 	position: fixed;
-	z-index: 888;
+	z-index: 8888;
 	width: 100%;
 	padding: 15px 0;
 }

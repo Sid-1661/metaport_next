@@ -28,7 +28,7 @@ function Header({ type }) {
 
         const hasWindow = typeof window !== 'undefined';
 
-        const height = hasWindow ? window.innerHeight : null; 
+        const height = hasWindow ? window.innerHeight : null;
 
         window.scrollTo(0, height - 74);
     }
@@ -37,10 +37,12 @@ function Header({ type }) {
         const handleScroll = () => {
             const header = headerRef.current;
 
-            if (header && window.pageYOffset > 0) {
-                header.classList.add('sticky');
-            } else {
-                header.classList.remove('sticky');
+            if (header) {
+                if (window.pageYOffset > 0) {
+                    header.classList.add('sticky');
+                } else {
+                    header.classList.remove('sticky');
+                }
             }
         };
 
