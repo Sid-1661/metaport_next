@@ -1,7 +1,7 @@
 // const { SuperfaceClient } = require('@superfaceai/one-sdk');
 const { createClient } = require('@supabase/supabase-js')
-const supabaseUrl = 'https://lxstflrwscwaenzwsiwv.supabase.co'
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx4c3RmbHJ3c2N3YWVuendzaXd2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTExMzk4NzYsImV4cCI6MjAwNjcxNTg3Nn0.ieQl89Swq9w-VJ6gOYtXG2sjEyhXlImJprtHhJWjxMU'
+const supabaseUrl = 'https://jhrrzqvcuminmzilruam.supabase.co'
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpocnJ6cXZjdW1pbm16aWxydWFtIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTExNTA5NTksImV4cCI6MjAwNjcyNjk1OX0.ShetFnZ_7iarIt2oj9OyFn2SphZ0ifJZ3OKclfGIed8'
 const supabaseClient = createClient(supabaseUrl, supabaseKey)
 // const sdk = new SuperfaceClient();
 
@@ -14,7 +14,7 @@ export default async function handler(req, res) {
   const body = req.body;
   
   const { error } = await supabaseClient
-  .from('metaport_visitors')
+  .from('metaport_contact')
   .insert({ 
     name: body.name,
     email: body.email,
