@@ -21,13 +21,14 @@ export default async function handler(req, res) {
     number: body.phone,
     message: body.message
    })
-  console.log('error', error);
   return res.status(200).json({
     name: body.name,
     email: body.email,
     phone: body.phone,
     message: body.message
   });
+
+  
   // if (!formValid(body)) {
   //   res.status(422).end();
   //   return;
@@ -65,4 +66,5 @@ export default async function handler(req, res) {
   //   console.error(error);
   //   res.status(500).end();
   // }
+  
 }
