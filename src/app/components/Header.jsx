@@ -141,6 +141,17 @@ function Header({ type }) {
                     </div>
                 </div>
             }
+
+            {type === 'Expertise' &&
+                <div className='ExpertiseHeader singlePage'>
+                    <img src="images/lamp.png" alt="" />
+                    <div className="HeroContent text-center">
+                        <Container>
+                            <h1>{t("Innovations Meet Intellgence")}</h1>
+                        </Container>
+                    </div>
+                </div>
+            }
         </>
     )
 }

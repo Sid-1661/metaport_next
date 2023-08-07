@@ -97,7 +97,7 @@ function About() {
                 </Container>
             </div>
 
-            <Footer />
+            <Footer type="About" />
 
         </>
     )

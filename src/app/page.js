@@ -606,7 +606,7 @@ export default function Home() {
                 </Container>
             </div>
 
-            <Footer />
+            <Footer type="Home" />
         </main>
     );
 }

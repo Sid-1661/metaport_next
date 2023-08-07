@@ -2676,3 +2676,73 @@ h4.c-rich-nav__heading-link a:hover span {
 		bottom: 110px;
 	}
 }
+
+.ExpertiseFooter {
+	padding: 50px 0px;
+	background-color: #43F8BE;
+	text-align: left;
+	position: relative;
+	overflow: hidden;
+}
+
+.ExpertiseFooter::after {
+	content: "";
+	background-image: url('/images/003-w.png');
+	height: 274px;
+	width: 337px;
+	position: absolute;
+	bottom: 0;
+	right: -100px;
+}
+
+.ExpertiseFooter h2 {
+	font-size: 68px;
+	line-height: 72px;
+	text-transform: uppercase;
+}
+
+.ExButton {
+	text-align: center;
+}
+
+/* Expertise Header Image */
+.ExpertiseHeader.singlePage {
+	max-height: 520px;
+	object-fit: cover;
+	min-height: 450px;
+	background-color: #8F00FF;
+}
+
+.ExpertiseHeader.singlePage .HeroContent {
+	top: calc(50% + 30px)
+}
+
+.ExpertiseHeader.singlePage .HeroContent p {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ExpertiseHeader.singlePage img {
+	width: 282px;
+	max-height: 282px;
+	opacity: 0.2;
+	position: absolute;
+	right: 10px;
+	top: 150px;
+}
+
+.ExpertiseHeader {
+	position: relative;
+}
+
+.ExpertiseHeader video {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	display: block;
+}
+
+.ExpertiseHeader.singlePage .HeroContent p {
+	font-size: 14px;
+	line-height: 24px;
+}

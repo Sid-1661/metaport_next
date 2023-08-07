@@ -5,23 +5,74 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from "react-i18next";
 
-function Footer() {
+function Footer({ type }) {
     const { t } = useTranslation();
 
     return (
         <>
-            <div className="InfoWrap">
-                <Container>
-                    <Row>
-                        <Col md={12}>
-                            <h2>{t("Build, Innovate, Unleash with Metaport")}</h2>
+            {type === 'Expertise' &&
+                <div className="ExpertiseFooter">
+                    <Container>
+                        <Row>
+                                <Col md={9}>
+                                    <h3>{t("Want a Solution for your Business?")}</h3>
+                                    <h2>{t("Let Us Know if you Have a Project That Needs to Be Delivered")}</h2>
+                                </Col>
+                                <Col md={3} className='ExButton'>
+                                    <Link href={'/contact'} className='c-button fillBtn'>{t("Contact Team")}</Link>
+                                </Col>
+                        </Row>
+                    </Container>
+                </div >
+            }
 
-                            <Link href={'/contact'} className='c-button fillBtn'>{t("Contact Team")}</Link>
+            {
+                type === "Home" &&
+                <div className="InfoWrap">
+                    <Container>
+                        <Row>
+                            <Col md={12}>
+                                <h2>{t("Build, Innovate, Unleash with Metaport")}</h2>
 
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+                                <Link href={'/contact'} className='c-button fillBtn'>{t("Contact Team")}</Link>
+
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+            }
+
+            {
+                type === "About" &&
+                <div className="InfoWrap">
+                    <Container>
+                        <Row>
+                            <Col md={12}>
+                                <h2>{t("Build, Innovate, Unleash with Metaport")}</h2>
+
+                                <Link href={'/contact'} className='c-button fillBtn'>{t("Contact Team")}</Link>
+
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+            }
+
+            {
+                type === "Contact" &&
+                <div className="InfoWrap">
+                    <Container>
+                        <Row>
+                            <Col md={12}>
+                                <h2>{t("Build, Innovate, Unleash with Metaport")}</h2>
+
+                                <Link href={'/contact'} className='c-button fillBtn'>{t("Contact Team")}</Link>
+
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+            }
 
             <footer className='footerWrap'>
                 <Container>

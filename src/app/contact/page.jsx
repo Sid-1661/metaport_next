@@ -114,7 +114,7 @@ function Contact() {
                 </Container>
             </div>
 
-            <Footer />
+            <Footer type="Contact" />
         </>
     )
 }

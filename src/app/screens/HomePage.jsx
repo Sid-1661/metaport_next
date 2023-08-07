@@ -288,7 +288,7 @@ function HomePage() {
                     </Row>
                 </Container>
             </div>
-            <Footer />
+            <Footer type="Home" />
         </>
     )
 }
