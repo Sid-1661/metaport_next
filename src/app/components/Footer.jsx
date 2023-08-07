@@ -2,10 +2,6 @@ import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
 import Image from 'next/image';
 
-import email from '../images/i-01.png'
-import call from '../images/i-02.png'
-import notification from '../images/i-03.png'
-import Logo from '../images/logo.svg'
 import Link from 'next/link';
 import { useTranslation } from "react-i18next";
 
@@ -33,7 +29,7 @@ function Footer() {
                         <Col md={3}>
                             <div className="widget">
 
-                                <Image src={Logo} alt="Metaport" className='fLogo' style={{ width: 209, height: 'auto' }} priority={true} />
+                                <Image src="/images/logo.svg" width={209} height={41} alt="Metaport" className='fLogo' style={{ width: 209, height: 'auto' }} priority={true} />
 
                                 <p>{t("Unleashing the boundless potential for global industries, pursuing excellence with brilliant minds and building powerful tools.")}</p>
 
@@ -76,7 +72,7 @@ function Footer() {
                                 <h3>{t("Business Inquiry")}</h3>
 
                                 <div className="inquiry">
-                                    <Image src={email} alt="Email" />
+                                    <Image src="/images/i-01.png" width={20} height={20} alt="Email" />
 
                                     <div>
                                         <h5>Email</h5>
@@ -84,7 +80,7 @@ function Footer() {
                                     </div>
                                 </div>
                                 <div className="inquiry">
-                                    <Image src={call} alt="Call" />
+                                    <Image src="/images/i-02.png" width={20} height={20} alt="Call" />
 
                                     <div>
                                         <h5>Phone</h5>
@@ -93,7 +89,7 @@ function Footer() {
 
                                 </div>
                                 <div className="inquiry">
-                                    <Image src={notification} alt="Notification" />
+                                    <Image src="/images/i-03.png" width={20} height={20} alt="Notification" />
                                     <div>
                                         <h5>{t("Location")}</h5>
                                         <p>Unit 1, Level G, Emirates Towers Boulevard, Dubai, UAE</p>

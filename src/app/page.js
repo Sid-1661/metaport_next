@@ -1,7 +1,5 @@
 "use client"; // This is a client component 👈🏽
-import Image from "next/image";
 import Link from "next/link";
-import styles from "./page.module.css";
 import React, { useState, useEffect } from "react";
 import { Col, Container, Row } from "reactstrap";
 // import WOW from "wowjs";

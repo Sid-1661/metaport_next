@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Container } from 'reactstrap'
-import Logo from '../images/logo.svg'
 
 import Link from 'next/link';
 import Image from 'next/image';
@@ -72,7 +71,7 @@ function Header({ type }) {
                     <div className="dFlex">
                         <div className='LogoWrap'>
                             <Link href={"/"}>
-                                <Image src={Logo} alt="Metaport" priority={true} />
+                                <Image src="/images/logo.svg" width={209} height={41} alt="Metaport" priority={true} />
                             </Link>
                         </div>
 
@@ -83,7 +82,7 @@ function Header({ type }) {
 
             <header className='mobileHeader'>
                 <Link href={"/"}>
-                    <Image src={Logo} alt="Metaport" width={209} height={"auto"} priority={true} />
+                    <Image src="/images/logo.svg" alt="Metaport" width={209} height={"41"} priority={true} />
                 </Link>
 
                 <a href="#" onClick={toggleDiv} className='OpenMenu'>
