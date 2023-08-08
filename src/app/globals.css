@@ -76,6 +76,7 @@ h6,
 	transition: all 0.35s ease;
 }
 
+
 .c-button.button-color-0 {
 	border-color: var(--theme-color);
 	color: var(--theme-color);
