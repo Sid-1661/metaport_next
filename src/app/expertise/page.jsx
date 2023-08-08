@@ -52,9 +52,9 @@ function Expertise() {
         </Container>
       </div>
 
-      <div className={Styles.Service}>
-        <Container>
-          <Row >
+      {/* <div >
+        <Container> */}
+          <Row className={Styles.Service}>
             <Col md={6} className={Styles.BlockBack}>
               <h1>{t("Blockchain & Web3 Development")}</h1>
               <Image src="/images/block 1.svg" width={218} height={218} className={Styles.Block1} alt='Block1' />
@@ -65,8 +65,8 @@ function Expertise() {
               <Image src="/images/innovation 1.svg" width={218} height={218} className={Styles.Innovation1} alt='Innovation1' />
             </Col>
           </Row>
-        </Container>
-      </div>
+        {/* </Container>
+      </div> */}
 
       <div className={Styles.Production}>
         <Container>
@@ -85,9 +85,9 @@ function Expertise() {
         </Container>
       </div>
 
-      <div className={Styles.AppAndWeb}>
-        <Container>
-          <Row>
+      {/* <div >
+        <Container> */}
+          <Row className={Styles.AppAndWeb}>
             <Col md={6} className={Styles.Web}>
               <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 {!isMouseOver ? (
@@ -123,8 +123,8 @@ function Expertise() {
               </div>
             </Col>
           </Row>
-        </Container>
-      </div>
+        {/* </Container>
+      </div> */}
 
       <div className={Styles.Emerging}>
         <Container>
@@ -143,9 +143,9 @@ function Expertise() {
         </Container>
       </div>
 
-      <div className={Styles.ArAndVr}>
-        <Container>
-          <Row>
+      {/* <div >
+        <Container> */}
+          <Row className={Styles.ArAndVr}>
             <Col md={6} className={Styles.Ar}>
               <h1>{t("AR & VR Develop")}</h1>
               <Image src="/images/arandvr.svg" width={218} height={218} className={Styles.Block1} alt='Block1' />
@@ -155,8 +155,8 @@ function Expertise() {
               <Image src="/images/iot.svg" width={218} height={218} className={Styles.Innovation1} alt='Innovation1' />
             </Col>
           </Row>
-        </Container>
-      </div>
+        {/* </Container>
+      </div> */}
 
       <div className={Styles.Security}>
         <Container>
@@ -175,9 +175,9 @@ function Expertise() {
         </Container>
       </div>
 
-      <div className={Styles.Quality}>
-        <Container>
-          <Row>
+      {/* <div >
+        <Container> */}
+          <Row className={Styles.Quality}>
             <Col md={6} className={Styles.Design}>
               <h1>{t("UI/UX Design")}</h1>
               <Image src="/images/design.svg" width={218} height={218} className={Styles.Block1} alt='Block1' />
@@ -187,8 +187,8 @@ function Expertise() {
               <Image src="/images/assurance.svg" width={218} height={218} className={Styles.Innovation1} alt='Innovation1' />
             </Col>
           </Row>
-        </Container>
-      </div>
+        {/* </Container>
+      </div> */}
 
       <div className={Styles.Emerging}>
         <Container>

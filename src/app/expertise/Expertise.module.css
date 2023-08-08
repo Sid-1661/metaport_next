@@ -188,8 +188,8 @@
   text-align: left;
   position: relative;
   justify-content: center;
-  background: rgb(143, 0, 255);
-  background: linear-gradient(90deg, rgba(143, 0, 255, 1) 50%, rgba(9, 9, 121, 1) 50%, rgba(255, 0, 122, 1) 50%);
+  /* background: rgb(143, 0, 255);
+  background: linear-gradient(90deg, rgba(143, 0, 255, 1) 50%, rgba(9, 9, 121, 1) 50%, rgba(255, 0, 122, 1) 50%); */
 }
 
 .Block1 {
@@ -229,8 +229,8 @@
   text-align: left;
   position: relative;
   justify-content: center;
-  background: rgb(68, 249, 195);
-  background: linear-gradient(90deg, rgba(68, 249, 195, 1) 50%, rgba(9, 9, 121, 1) 50%, rgba(252, 255, 0, 1) 50%);
+  /* background: rgb(68, 249, 195);
+  background: linear-gradient(90deg, rgba(68, 249, 195, 1) 50%, rgba(9, 9, 121, 1) 50%, rgba(252, 255, 0, 1) 50%); */
 }
 
 .Web {
@@ -262,8 +262,8 @@
   text-align: left;
   position: relative;
   justify-content: center;
-  background: rgb(22, 19, 48);
-  background: linear-gradient(90deg, rgba(22, 19, 48, 1) 50%, rgba(9, 9, 121, 1) 50%, rgba(255, 0, 122, 1) 50%);
+  /* background: rgb(22, 19, 48);
+  background: linear-gradient(90deg, rgba(22, 19, 48, 1) 50%, rgba(9, 9, 121, 1) 50%, rgba(255, 0, 122, 1) 50%); */
 }
 
 .Ar {
@@ -306,8 +306,8 @@
   text-align: left;
   position: relative;
   justify-content: center;
-  background: rgb(22, 19, 48);
-  background: linear-gradient(90deg, rgba(22, 19, 48, 1) 50%, rgba(9, 9, 121, 1) 50%, rgba(252, 255, 0, 1) 50%);
+  /* background: rgb(22, 19, 48);
+  background: linear-gradient(90deg, rgba(22, 19, 48, 1) 50%, rgba(9, 9, 121, 1) 50%, rgba(252, 255, 0, 1) 50%); */
 }
 
 .Design {
