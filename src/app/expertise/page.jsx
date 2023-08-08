@@ -93,7 +93,7 @@ function Expertise() {
         <Container>
           <Row>
             <Col md={5}>
-              <Image src="/images/1discuss.png" width={490} height={471} className={Styles.CeoImage} alt='M A B Siddique' />
+              <Image src="/images/1discuss.png" width={490} height={471} className={Styles.CeoImage} alt='Team Extension' />
             </Col>
             <Col md={7} className='mb-4'>
               <h3>{t("Team Extension")}</h3>
@@ -112,7 +112,7 @@ function Expertise() {
             {!isMouseOver2 ? (
               <>
                 <h4>{t("Blockchain & Web3 Development")}</h4>
-                <Image src="/images/block 1.svg" width={218} height={218} className={Styles.Block1} alt='Block1' />
+                <Image src="/images/block 1.svg" width={218} height={218} className={Styles.Block1} alt='Blockchain' />
               </>
             ) : (
               <>
@@ -129,7 +129,7 @@ function Expertise() {
               <>
                 <h4>{t("AI & ML App ")}</h4>
                 <h4>{t("Development")}</h4>
-                <Image src="/images/innovation 1.svg" width={218} height={218} className={Styles.Innovation1} alt='Innovation1' />
+                <Image src="/images/innovation 1.svg" width={218} height={218} className={Styles.Innovation1} alt='AI & ML APP' />
               </>
             ) : (
               <>
@@ -147,7 +147,7 @@ function Expertise() {
         <Container>
           <Row>
             <Col md={5}>
-              <Image src="/images/product.png" width={388} height={388} className={Styles.CeoImage} alt='M A B Siddique' />
+              <Image src="/images/product.png" width={388} height={388} className={Styles.CeoImage} alt='Engineering' />
             </Col>
             <Col md={7} className='mb-4'>
               <h3>{t("Product Engineering")}</h3>
@@ -166,7 +166,7 @@ function Expertise() {
             {!isMouseOver ? (
               <>
                 <h4>{t("Web Development")}</h4>
-                <Image src="/images/coding.svg" width={218} height={218} className={Styles.Block1} alt='Block1' />
+                <Image src="/images/coding.svg" width={218} height={218} className={Styles.Block1} alt='Web Development' />
               </>
             ) : (
               <>
@@ -182,7 +182,7 @@ function Expertise() {
             {!isMouseOver1 ? (
               <>
                 <h4>{t("App Development")}</h4>
-                <Image src="/images/app-development.svg" width={218} height={218} className={Styles.Innovation1} alt='Innovation1' />
+                <Image src="/images/app-development.svg" width={218} height={218} className={Styles.Innovation1} alt='App Development' />
               </>
             ) : (
               <>
@@ -199,7 +199,7 @@ function Expertise() {
         <Container>
           <Row>
             <Col md={5}>
-              <Image src="/images/brain.png" width={388} height={388} className={Styles.CeoImage} alt='M A B Siddique' />
+              <Image src="/images/brain.png" width={388} height={388} className={Styles.CeoImage} alt='Engineering Tech' />
             </Col>
             <Col md={7} className='mb-4'>
               <h3>{t("Emerging Tech")}</h3>
@@ -218,7 +218,7 @@ function Expertise() {
             {!isMouseOver4 ? (
               <>
                 <h4>{t("AR & VR Develop")}</h4>
-                <Image src="/images/arandvr.svg" width={218} height={218} className={Styles.Block1} alt='Block1' />
+                <Image src="/images/arandvr.svg" width={218} height={218} className={Styles.Block1} alt='AR & VR' />
               </>
             ) : (
               <>
@@ -234,7 +234,7 @@ function Expertise() {
             {!isMouseOver5 ? (
               <>
                 <h4>{t("IoT Solutions")}</h4>
-                <Image src="/images/iot.svg" width={218} height={218} className={Styles.Innovation1} alt='Innovation1' />
+                <Image src="/images/iot.svg" width={218} height={218} className={Styles.Innovation1} alt='Iot Solution' />
               </>
             ) : (
               <>
@@ -251,7 +251,7 @@ function Expertise() {
         <Container>
           <Row>
             <Col md={5}>
-              <Image src="/images/security.png" width={388} height={388} className={Styles.CeoImage} alt='M A B Siddique' />
+              <Image src="/images/security.png" width={388} height={388} className={Styles.CeoImage} alt='Security' />
             </Col>
             <Col md={7} className='mb-4'>
               <h3>{t("Security & Dev Ops")}</h3>
@@ -270,7 +270,7 @@ function Expertise() {
             {!isMouseOver6 ? (
               <>
                 <h4>{t("UI/UX Design")}</h4>
-                <Image src="/images/design.svg" width={218} height={218} className={Styles.Block1} alt='Block1' />
+                <Image src="/images/design.svg" width={218} height={218} className={Styles.Block1} alt='UI/UX Design' />
               </>
             ) : (
               <>
@@ -286,7 +286,7 @@ function Expertise() {
             {!isMouseOver7 ? (
               <>
                 <h4>{t("Quality Assurance (QA)")}</h4>
-                <Image src="/images/assurance.svg" width={218} height={218} className={Styles.Innovation1} alt='Innovation1' />
+                <Image src="/images/assurance.svg" width={218} height={218} className={Styles.Innovation1} alt='Quality Assurance' />
               </>
             ) : (
               <>
@@ -303,7 +303,7 @@ function Expertise() {
         <Container>
           <Row>
             <Col md={5}>
-              <Image src="/images/ecommerce.png" width={388} height={388} className={Styles.CeoImage} alt='M A B Siddique' />
+              <Image src="/images/ecommerce.png" width={388} height={388} className={Styles.CeoImage} alt='eCommerce' />
             </Col>
             <Col md={7} className='mb-4'>
               <h3>{t("eCommerce")}</h3>

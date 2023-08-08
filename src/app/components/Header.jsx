@@ -103,7 +103,7 @@ function Header({ type }) {
 
                 <div className='HomePageHero'>
 
-                    <video width="640" height="360" playsInline autoPlay loop muted>
+                    <video width="640" height="360" playsInline autoPlay loop muted controls="false">
                         <source src="images/banner.mp4" type="video/mp4" />
                         <source src="images/banner.ogg" type="video/ogg" />
                     </video>

@@ -70,10 +70,10 @@ function HomePage() {
                 <Container>
                     <Row>
                         <Col md={12} className='text-center'>
-                            <img src="images/001.png" alt="" className='wow zoomIn' data-wow-duration="1.0s" />
+                            <img src="images/001.png" alt="Finger" className='wow zoomIn' data-wow-duration="1.0s" />
 
                             <div className="ProgressTitle">
-                                <img src="images/002.png" alt="" /> <br />
+                                <img src="images/002.png" alt="ProgressTitle" /> <br />
 
                                 <a href="#" className='c-button fillBtn Green'>{t("Get Started")}</a>
                             </div>
@@ -160,7 +160,7 @@ function HomePage() {
                         <Col md={12} className='text-center'>
                             <div className="wpb_wrapper">
 
-                                <img className='earth' src="images/globe-poster.png" alt="" />
+                                <img className='earth' src="images/globe-poster.png" alt="Earth" />
 
                                 <div className="ProcessTitle">
                                     <h3>{t("Power up Business")} <br /> {t("Growth")}</h3>
@@ -242,7 +242,7 @@ function HomePage() {
                     <Row>
                         <Col md={4} className='mb-4'>
                             <div className="BlogWrap wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
-                                <img src="images/003.png" alt="" />
+                                <img src="images/003.png" alt="Product" />
 
                                 <h3>{t("New product name")}</h3>
 
@@ -253,7 +253,7 @@ function HomePage() {
                         </Col>
                         <Col md={4} className='mb-4'>
                             <div className="BlogWrap wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s" style={{ backgroundColor: "#FD5DA5" }}>
-                                <img src="images/003.png" alt="" />
+                                <img src="images/003.png" alt="Product" />
 
                                 <h3>{t("New product name")}</h3>
 
@@ -264,7 +264,7 @@ function HomePage() {
                         </Col>
                         <Col md={4} className='mb-4'>
                             <div className="BlogWrap wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s" style={{ backgroundColor: "#6DCAFC" }}>
-                                <img src="images/003.png" alt="" />
+                                <img src="images/003.png" alt="Product" />
 
                                 <h3>{t("New product name")}</h3>
 
