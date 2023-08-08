@@ -52,21 +52,17 @@ function Expertise() {
         </Container>
       </div>
 
-      {/* <div >
-        <Container> */}
-          <Row className={Styles.Service}>
-            <Col md={6} className={Styles.BlockBack}>
-              <h1>{t("Blockchain & Web3 Development")}</h1>
-              <Image src="/images/block 1.svg" width={218} height={218} className={Styles.Block1} alt='Block1' />
-            </Col>
-            <Col md={6} className={Styles.AiBack}>
-              <h1>{t("AI & ML App ")}</h1>
-              <h1>{t("Development")}</h1>
-              <Image src="/images/innovation 1.svg" width={218} height={218} className={Styles.Innovation1} alt='Innovation1' />
-            </Col>
-          </Row>
-        {/* </Container>
-      </div> */}
+      <Row className={Styles.Service}>
+        <Col md={6} className={Styles.BlockBack}>
+          <h4>{t("Blockchain & Web3 Development")}</h4>
+          <Image src="/images/block 1.svg" width={218} height={218} className={Styles.Block1} alt='Block1' />
+        </Col>
+        <Col md={6} className={Styles.AiBack}>
+          <h4>{t("AI & ML App ")}</h4>
+          <h4>{t("Development")}</h4>
+          <Image src="/images/innovation 1.svg" width={218} height={218} className={Styles.Innovation1} alt='Innovation1' />
+        </Col>
+      </Row>
 
       <div className={Styles.Production}>
         <Container>
@@ -85,46 +81,41 @@ function Expertise() {
         </Container>
       </div>
 
-      {/* <div >
-        <Container> */}
-          <Row className={Styles.AppAndWeb}>
-            <Col md={6} className={Styles.Web}>
-              <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                {!isMouseOver ? (
-                  <>
-                    <h1>{t("Web Development")}</h1>
-                    <Image src="/images/coding.svg" width={218} height={218} className={Styles.Block1} alt='Block1' />
-                  </>
-                ) : (
-                  <>
-                    <h1>{t("Web Development")}</h1>
-                    <p>{t("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")}</p>
-                    <Link href={'/contact'} className='c-button fillBtn'>{t("Inquire Now")}</Link>
-                  </>
-                )}
+      <Row className={Styles.Service1}>
+        <Col md={6} className={Styles.Web}>
+          <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            {!isMouseOver ? (
+              <>
+                <h4>{t("Web Development")}</h4>
+                <Image src="/images/coding.svg" width={218} height={218} className={Styles.Block1} alt='Block1' />
+              </>
+            ) : (
+              <>
+                <h4>{t("Web Development")}</h4>
+                <p>{t("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")}</p>
+                <Link href={'/contact'} className='c-button fillBtn'>{t("Inquire Now")}</Link>
+              </>
+            )}
+          </div>
+        </Col>
+        <Col md={6} className={Styles.App}>
+          <div onMouseEnter={handleMouseEnter1} onMouseLeave={handleMouseLeave1}>
+            {!isMouseOver1 ? (
+              <>
+                <h4>{t("App Development")}</h4>
+                <Image src="/images/app-development.svg" width={218} height={218} className={Styles.Innovation1} alt='Innovation1' />
+              </>
+            ) : (
+              <>
+                <h4>{t("App Development")}</h4>
+                <p>{t("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")}</p>
+                <Link href={'/contact'} className='c-button fillBtn'>{t("Inquire Now")}</Link>
+              </>
+            )}
 
-              </div>
-            </Col>
-            <Col md={6} className={Styles.App}>
-              <div onMouseEnter={handleMouseEnter1} onMouseLeave={handleMouseLeave1}>
-                {!isMouseOver1 ? (
-                  <>
-                    <h1>{t("App Development")}</h1>
-                    <Image src="/images/app-development.svg" width={218} height={218} className={Styles.Innovation1} alt='Innovation1' />
-                  </>
-                ) : (
-                  <>
-                    <h1>{t("App Development")}</h1>
-                    <p>{t("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")}</p>
-                    <Link href={'/contact'} className='c-button fillBtn'>{t("Inquire Now")}</Link>
-                  </>
-                )}
-
-              </div>
-            </Col>
-          </Row>
-        {/* </Container>
-      </div> */}
+          </div>
+        </Col>
+      </Row>
 
       <div className={Styles.Emerging}>
         <Container>
@@ -143,20 +134,16 @@ function Expertise() {
         </Container>
       </div>
 
-      {/* <div >
-        <Container> */}
-          <Row className={Styles.ArAndVr}>
-            <Col md={6} className={Styles.Ar}>
-              <h1>{t("AR & VR Develop")}</h1>
-              <Image src="/images/arandvr.svg" width={218} height={218} className={Styles.Block1} alt='Block1' />
-            </Col>
-            <Col md={6} className={Styles.Iot}>
-              <h1>{t("IoT Solutions")}</h1>
-              <Image src="/images/iot.svg" width={218} height={218} className={Styles.Innovation1} alt='Innovation1' />
-            </Col>
-          </Row>
-        {/* </Container>
-      </div> */}
+      <Row className={Styles.Service}>
+        <Col md={6} className={Styles.BlockBack1}>
+          <h4>{t("AR & VR Develop")}</h4>
+          <Image src="/images/arandvr.svg" width={218} height={218} className={Styles.Block1} alt='Block1' />
+        </Col>
+        <Col md={6} className={Styles.AiBack}>
+          <h4>{t("IoT Solutions")}</h4>
+          <Image src="/images/iot.svg" width={218} height={218} className={Styles.Innovation1} alt='Innovation1' />
+        </Col>
+      </Row>
 
       <div className={Styles.Security}>
         <Container>
@@ -175,20 +162,16 @@ function Expertise() {
         </Container>
       </div>
 
-      {/* <div >
-        <Container> */}
-          <Row className={Styles.Quality}>
-            <Col md={6} className={Styles.Design}>
-              <h1>{t("UI/UX Design")}</h1>
-              <Image src="/images/design.svg" width={218} height={218} className={Styles.Block1} alt='Block1' />
-            </Col>
-            <Col md={6} className={Styles.Assurance}>
-              <h1>{t("Quality Assurance (QA)")}</h1>
-              <Image src="/images/assurance.svg" width={218} height={218} className={Styles.Innovation1} alt='Innovation1' />
-            </Col>
-          </Row>
-        {/* </Container>
-      </div> */}
+      <Row className={Styles.Service}>
+        <Col md={6} className={Styles.Design}>
+          <h4>{t("UI/UX Design")}</h4>
+          <Image src="/images/design.svg" width={218} height={218} className={Styles.Block1} alt='Block1' />
+        </Col>
+        <Col md={6} className={Styles.Assurance}>
+          <h4>{t("Quality Assurance (QA)")}</h4>
+          <Image src="/images/assurance.svg" width={218} height={218} className={Styles.Innovation1} alt='Innovation1' />
+        </Col>
+      </Row>
 
       <div className={Styles.Emerging}>
         <Container>
