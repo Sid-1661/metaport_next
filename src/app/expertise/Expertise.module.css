@@ -104,8 +104,6 @@
     font-size: 40px;
   }
 
-  .FormWrap img {}
-
   .valuesWrap h2 {
     font-size: 20px;
     line-height: 30px;
@@ -165,7 +163,7 @@
   background-color: #8F00FF;
   padding-top: 104px;
   padding-bottom: 104px;
-  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .BlockBack h1 {
@@ -178,7 +176,6 @@
   background-color: #FF007A;
   padding-top: 104px;
   padding-bottom: 104px;
-  padding-left: 45px;
 }
 
 .AiBack h1 {
@@ -240,8 +237,7 @@
   background-color: #44F9C3;
   ;
   padding-top: 104px;
-  padding-left: 45px;
-  height: 500px;
+  /* height: 500px; */
 }
 
 .Web h1 {
@@ -254,7 +250,6 @@
   background-color: #FCFF00;
   ;
   padding-top: 104px;
-  padding-left: 45px;
 }
 
 .App h1 {
@@ -275,7 +270,6 @@
   background-color: #161330;
   padding-top: 104px;
   padding-bottom: 104px;
-  padding-left: 45px;
 }
 
 .Ar h1 {
@@ -288,7 +282,6 @@
   background-color: #FF007A;
   padding-top: 104px;
   padding-bottom: 104px;
-  padding-left: 45px;
 }
 
 .Iot h1 {
@@ -321,7 +314,6 @@
   background-color: #161330;
   padding-top: 104px;
   padding-bottom: 104px;
-  padding-left: 45px;
 }
 
 .Design h1 {
@@ -334,7 +326,6 @@
   background-color: #FCFF00;
   padding-top: 104px;
   padding-bottom: 104px;
-  padding-left: 45px;
 }
 
 .Assurance h1 {
