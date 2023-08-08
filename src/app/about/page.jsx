@@ -8,9 +8,6 @@ import Header from '../components/Header'
 import Footer from '../components/Footer';
 import Styles from './About.module.css'
 
-import CEOImage from '../images/004.png'
-import ValIcon from '../images/i-06.png'
-import Blockquote from '../images/i-07.png'
 import { useTranslation } from "react-i18next";
 
 function About() {
@@ -33,14 +30,14 @@ function About() {
                         <Col md={4}>
                             <div className={Styles.valuesWrap}>
                                 <div className={Styles.IconImage}>
-                                    <Image src={ValIcon} alt="Icon" />
+                                    <Image src="/images/i-06.png" width={56} height={86} alt="Icon" />
                                 </div>
                                 <h2>{t("Radical")} <br />{t("Integrity")}</h2>
                             </div>
 
                             <div className={Styles.valuesWrap}>
                                 <div className={Styles.IconImage}>
-                                    <Image src={ValIcon} alt="Icon" />
+                                    <Image src="/images/i-06.png" width={56} height={86} alt="Icon" />
                                 </div>
                                 <h2>{t("Fearless")} <br />{t("Transparency")}</h2>
                             </div>
@@ -49,14 +46,14 @@ function About() {
                         <Col md={4}>
                             <div className={Styles.valuesWrap}>
                                 <div className={Styles.IconImage}>
-                                    <Image src={ValIcon} alt="Icon" />
+                                    <Image src="/images/i-06.png" width={56} height={86} alt="Icon" />
                                 </div>
                                 <h2>{t("Dynamic")} <br />{t("Innovation")}</h2>
                             </div>
 
                             <div className={Styles.valuesWrap}>
                                 <div className={Styles.IconImage}>
-                                    <Image src={ValIcon} alt="Icon" />
+                                    <Image src="/images/i-06.png" width={56} height={86} alt="Icon" />
                                 </div>
                                 <h2>{t("Bold")} <br />{("Perfection")}</h2>
                             </div>
@@ -86,11 +83,11 @@ function About() {
                 <Container>
                     <Row className={Styles.FlexRow}>
                         <Col md={4}>
-                            <Image src={CEOImage} className={Styles.CeoImage} alt='M A B Siddique' />
+                            <Image src="/images/ceo.png" width={369} height={512} className={Styles.CeoImage} alt='M A B Siddique' />
                         </Col>
 
                         <Col md={8}>
-                            <Image src={Blockquote} className={Styles.Blockquote} alt='M A B Siddique' />
+                            <Image src="/images/i-07.png" width={63} height={44} className={Styles.Blockquote} alt='M A B Siddique' />
                             <h3>{t("We never falter; we rise stronger from every challenge. Our focus is solely on the pursuit of success and we make it happen.")}</h3>
 
                             <h5>M A B Siddique</h5>
@@ -100,7 +97,7 @@ function About() {
                 </Container>
             </div>
 
-            <Footer />
+            <Footer type="About" />
 
         </>
     )

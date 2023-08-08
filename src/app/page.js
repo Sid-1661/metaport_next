@@ -1,7 +1,5 @@
 "use client"; // This is a client component 👈🏽
-import Image from "next/image";
 import Link from "next/link";
-import styles from "./page.module.css";
 import React, { useState, useEffect } from "react";
 import { Col, Container, Row } from "reactstrap";
 // import WOW from "wowjs";
@@ -80,13 +78,6 @@ export default function Home() {
 
     return (
         <main>
-            {/* <div className="fixed">
-            {!scrollTrigger ? (
-                <Icon className="scrollDown" onClick={scrollToBottom} path={mdiChevronTripleDown } size={3} > </Icon>
-            ) : (
-                <Icon className="scrollUp" onClick={scrollToTop} path={mdiChevronTripleUp } size={3} > </Icon>
-            )}
-            </div> */}
             <Header type="Home" />
             <div className="OurExpertise">
                 <Container>
@@ -615,7 +606,7 @@ export default function Home() {
                 </Container>
             </div>
 
-            <Footer />
+            <Footer type="Home" />
         </main>
     );
 }

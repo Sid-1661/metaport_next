@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Container } from 'reactstrap'
-import Logo from '../images/logo.svg'
 
 import Link from 'next/link';
 import Image from 'next/image';
@@ -28,7 +27,7 @@ function Header({ type }) {
 
         const hasWindow = typeof window !== 'undefined';
 
-        const height = hasWindow ? window.innerHeight : null; 
+        const height = hasWindow ? window.innerHeight : null;
 
         window.scrollTo(0, height - 74);
     }
@@ -37,10 +36,12 @@ function Header({ type }) {
         const handleScroll = () => {
             const header = headerRef.current;
 
-            if (window.pageYOffset > 0) {
-                header.classList.add('sticky');
-            } else {
-                header.classList.remove('sticky');
+            if (header) {
+                if (window.pageYOffset > 0) {
+                    header.classList.add('sticky');
+                } else {
+                    header.classList.remove('sticky');
+                }
             }
         };
 
@@ -70,7 +71,7 @@ function Header({ type }) {
                     <div className="dFlex">
                         <div className='LogoWrap'>
                             <Link href={"/"}>
-                                <Image src={Logo} alt="Metaport" priority={true} />
+                                <Image src="/images/logo.svg" width={209} height={41} alt="Metaport" priority={true} />
                             </Link>
                         </div>
 
@@ -81,7 +82,7 @@ function Header({ type }) {
 
             <header className='mobileHeader'>
                 <Link href={"/"}>
-                    <Image src={Logo} alt="Metaport" style={{ width: 209, height: 'auto' }} priority={true} />
+                    <Image src="/images/logo.svg" alt="Metaport" width={209} height={"41"} priority={true} />
                 </Link>
 
                 <a href="#" onClick={toggleDiv} className='OpenMenu'>
@@ -136,6 +137,17 @@ function Header({ type }) {
                         <Container>
                             <h1>{t("Get in touch")}</h1>
                             <p>{t("We build powerful modern tech solutions to accelerate business growth, unlocking full potential with smart tech innovations from cloud-based solutions to AI-powered innovations. Let's embark on this thrilling journey together.")}</p>
+                        </Container>
+                    </div>
+                </div>
+            }
+
+            {type === 'Expertise' &&
+                <div className='ExpertiseHeader singlePage'>
+                    <img src="images/lamp.png" alt="" />
+                    <div className="HeroContent text-center">
+                        <Container>
+                            <h1>{t("Innovations Meet Intellgence")}</h1>
                         </Container>
                     </div>
                 </div>

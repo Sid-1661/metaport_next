@@ -4,6 +4,9 @@ import Link from 'next/link';
 
 import { useTranslation } from "react-i18next";
 
+
+
+
 function Menu() {
     const { t } = useTranslation();
     return (
@@ -53,7 +56,7 @@ function Menu() {
                                     </div>
                                 </div>
                             </li>*/}
-                            <li><Link href={'/'}> {t("Our Expertise")}</Link></li>
+                            <li><Link href={'/expertise'}> {t("Our Expertise")}</Link></li>
                             <li><Link href={'/'}>{t("Our Products")}</Link></li>
                             <li><Link href={'/'}>{t("Insights")}</Link></li>
                             <li className="cmm-item-has-content">

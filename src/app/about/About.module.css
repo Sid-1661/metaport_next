@@ -79,13 +79,7 @@
     margin-bottom: 25px;
     margin-top: 15px;
 }
-.CEOText h5{}
-.CEOText p{}
 
-
-.InfoWidget{
-
-}
 .InfoWidget h4{
     font-size: 36px;
     color: #fff;
@@ -129,9 +123,6 @@
         margin-top: 0px;
         margin-bottom: 10px;
         font-size: 40px;
-    }
-    .FormWrap img{ 
-
     }
 
     .valuesWrap h2{

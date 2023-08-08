@@ -1,0 +1,331 @@
+.mapWrap {
+  background: var(--theme-purple);
+  padding-top: 80px;
+}
+
+.FormWrap {
+  padding: 80px 0px;
+  background-image: url('/images/bg-04.png');
+  background-color: #44F9C3;
+}
+
+.FormWrap h3 {
+  font-size: 78px;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+
+.AboutContent {
+  padding: 80px 0px;
+  position: relative;
+}
+
+.AboutContent h2,
+.AboutContent p {
+  color: #fff;
+}
+
+.AboutContent h2 {
+  font-size: 78px;
+  line-height: 96px;
+  text-transform: uppercase;
+}
+
+.CEOText {
+  background: rgb(253, 253, 56);
+  background: linear-gradient(232deg, rgba(253, 253, 56, 1) 12%, rgba(212, 212, 212, 1) 100%);
+}
+
+.CEOText .FlexRow {
+  align-items: center;
+  position: relative;
+  z-index: 999;
+}
+
+.CeoImage {
+  height: auto;
+}
+
+.CEOText h3 {
+  font-size: 36px;
+  line-height: 46px;
+  text-transform: uppercase;
+  padding-right: 37px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.InfoWidget h4 {
+  font-size: 36px;
+  color: #fff;
+  line-height: 46px;
+}
+
+.InfoWidget p {
+  font-size: 24px;
+  color: #fff;
+  line-height: 34px;
+}
+
+.valuesWrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.IconImage {
+  width: 131px;
+  height: 131px;
+  border-radius: 100%;
+  background-color: #fff;
+  text-align: center;
+  padding: 22px 0px;
+}
+
+.valuesWrap h2 {
+  margin-left: -20px;
+  margin-bottom: 0px;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+
+@media (max-width: 991px) {
+  .FormWrap {
+    padding: 50px 0px;
+  }
+
+  .FormWrap h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+
+  .valuesWrap h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .addressInfo {
+    text-align: center;
+  }
+
+  .addressInfo p {
+    justify-content: center;
+  }
+
+  .mapWrap {
+    padding-top: 30px;
+  }
+
+  .mapWrap img {
+    height: auto;
+  }
+
+  .CEOText {
+    padding-bottom: 0px;
+    padding-top: 20px;
+  }
+
+  .Blockquote {
+    width: 30px;
+    height: auto;
+  }
+
+  .CEOText .FlexRow {
+    align-items: flex-end;
+  }
+
+  .CeoImage {
+    margin-bottom: 0px;
+  }
+
+  .CEOText h3 {
+    padding-right: 0px;
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .AboutContent h2 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .AboutContent p {
+    text-align: justify;
+  }
+}
+
+.BlockBack {
+  background-color: #8F00FF;
+  padding-top: 104px;
+  padding-bottom: 104px;
+  padding-right: 45px;
+}
+
+.BlockBack1 {
+  background-color: #161330;
+  padding-top: 104px;
+  padding-bottom: 104px;
+  padding-right: 45px;
+}
+
+.AiBack {
+  background-color: #FF007A;
+  padding-top: 104px;
+  padding-bottom: 104px;
+}
+
+.Block1 {
+  padding-top: 50px;
+}
+
+.Innovation1 {
+  padding-top: 50px;
+}
+
+.Production {
+  background-color: #161330;
+  color: white;
+  padding-top: 145px;
+  padding-bottom: 130px;
+}
+
+.Production h3 {
+  text-transform: uppercase;
+  font-size: 78px;
+}
+
+.Service {
+  background-color: white;
+  color: white;
+  margin: 0px;
+}
+
+.Service h4 {
+  text-transform: uppercase;
+  font-size: 65px;
+}
+
+.Service1 {
+  background-color: white;
+  color: rgb(20, 20, 20);
+  margin: 0px;
+}
+
+.Service1 h4 {
+  text-transform: uppercase;
+  font-size: 65px;
+}
+
+.Emerging {
+  background-color: #8F00FF;
+  color: white;
+  padding-top: 145px;
+  padding-bottom: 130px;
+}
+
+.Emerging h3 {
+  text-transform: uppercase;
+  font-size: 78px;
+}
+
+.AppAndWeb {
+  color: black;
+  text-align: left;
+  position: relative;
+  justify-content: center;
+}
+
+.Web {
+  background-color: #44F9C3;
+  ;
+  padding-top: 104px;
+  padding-bottom: 104px;
+}
+
+.Web h1 {
+  text-transform: uppercase;
+  font-size: 78px;
+  padding-left: 45px;
+}
+
+.App {
+  background-color: #FCFF00;
+  ;
+  padding-top: 104px;
+  padding-bottom: 104px;
+}
+
+.App h1 {
+  text-transform: uppercase;
+  font-size: 78px;
+  padding-left: 45px;
+}
+
+.ArAndVr {
+  color: white;
+  text-align: left;
+  position: relative;
+  justify-content: center;
+}
+
+.Ar {
+  background-color: #161330;
+  padding-top: 104px;
+  padding-bottom: 104px;
+}
+
+.Ar h1 {
+  text-transform: uppercase;
+  font-size: 78px;
+  padding-left: 45px;
+}
+
+.Iot {
+  background-color: #FF007A;
+  padding-top: 104px;
+  padding-bottom: 104px;
+}
+
+.Iot h1 {
+  text-transform: uppercase;
+  font-size: 78px;
+  padding-left: 45px;
+}
+
+.Security {
+  background-color: #44F9C3;
+  color: black;
+  padding-top: 145px;
+  padding-bottom: 130px;
+}
+
+.Security h3 {
+  text-transform: uppercase;
+  font-size: 78px;
+}
+
+.Quality {
+  color: white;
+  text-align: left;
+  position: relative;
+  justify-content: center;
+}
+
+.Design {
+  background-color: #161330;
+  padding-top: 104px;
+  padding-bottom: 104px;
+  padding-right: 45px;
+}
+
+.Assurance {
+  background-color: #FCFF00;
+  padding-top: 104px;
+  padding-bottom: 104px;
+  color: black;
+
+}
+

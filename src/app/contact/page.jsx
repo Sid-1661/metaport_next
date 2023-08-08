@@ -1,21 +1,12 @@
 "use client"; // This is a client component 👈🏽
 import React from 'react' 
 import { Col, Container, Row } from 'reactstrap';
-import Link from 'next/link';
 import Image from 'next/image';
 
 import Header from '../components/Header'
 import Footer from '../components/Footer';
 import Styles from './Contact.module.css'
 
-import MapImage from '../images/bg-03.png'
-import SendIcon from '../images/bg-04.png'
-import Building from '../images/001.png'
-import Call from '../images/call.png'
-import Sms from '../images/sms.png'
-import Location from '../images/i-04.png'
-import Address from '../images/i-05.png'
-import ScrollToTop from '../components/ScrollToTop';
 import { useTranslation } from "react-i18next";
 
 function Contact() {
@@ -25,9 +16,10 @@ function Contact() {
         const data = new FormData(e.currentTarget);
         try {
             const response = await fetch('/api/contact', {
-                method: 'post',
+                method: 'POST',
                 body: new URLSearchParams(data),
             });
+            console.log(response)
             if (!response.ok) {
                 throw new Error(`Invalid response: ${response.status}`);
             }
@@ -49,7 +41,7 @@ function Contact() {
                             <h3>{t("Send Us a Message")}</h3>
 
                             <div className="text-end" style={{ paddingRight: 15 }}>
-                                <Image src={SendIcon} alt='Metaport' />
+                                <Image src="/images/send.png" width={347} height={243} alt='Metaport' />
                             </div>
                         </Col>
 
@@ -89,23 +81,23 @@ function Contact() {
                 <Container>
                     <Row className={Styles.FlexRow}>
                         <Col md={4} className={`${Styles.InfoWidget} text-center InfoWidget`}>
-                            <Image src={Building} alt='UAE Dubai' />
+                            <Image src="/images/building.png" width={190} height={241} alt='UAE Dubai' />
                             <h4>UAE - DUBAI</h4>
                             <p>{t("Headquaters")}</p>
                         </Col>
                         <Col md={4}>
                             <div className={Styles.addressInfo}>
-                                <Image src={Location} alt='UAE Dubai' width={84} height={84} className={Styles.Icon} />
+                                <Image src="/images/i-04.png" alt='UAE Dubai' width={84} height={84} className={Styles.Icon} />
 
-                                <p>{t("Office 903, Grovenor Business Tower, Barsha Height (Tecom), Dubai")}</p>
+                                <p>{t("Unit 1, Level G, Emirates Towers Boulevard, Dubai, UAE")}</p>
                             </div>
                         </Col>
                         <Col md={4}>
                             <div className={Styles.addressInfo}>
-                                <Image src={Address} alt='UAE Dubai' width={84} height={84} className={Styles.Icon} />
+                                <Image src="/images/i-05.png" alt='UAE Dubai' width={84} height={84} className={Styles.Icon} />
 
-                                <p><Image src={Call} alt='UAE Dubai' /> +971 55 1345683</p>
-                                <p><Image src={Sms} alt='UAE Dubai' /> info@metaport.com</p>
+                                <p><Image src="/images/call.png" width={30} height={30} alt='UAE Dubai' /> +97 154 374 5479</p>
+                                <p><Image src="/images/sms.png" width={30} height={30} alt='UAE Dubai' />  info@metaports.co</p>
                             </div>
                         </Col>
                     </Row>
@@ -116,13 +108,13 @@ function Contact() {
                 <Container>
                     <Row>
                         <Col md={12}>
-                            <Image src={MapImage} alt='Map' />
+                            <Image src="/images/map.png" width={1448} height={586} alt='Map' />
                         </Col>
                     </Row>
                 </Container>
             </div>
 
-            <Footer />
+            <Footer type="Contact" />
         </>
     )
 }

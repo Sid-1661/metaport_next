@@ -2,30 +2,77 @@ import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
 import Image from 'next/image';
 
-import email from '../images/i-01.png'
-import call from '../images/i-02.png'
-import notification from '../images/i-03.png'
-import Logo from '../images/logo.svg'
 import Link from 'next/link';
 import { useTranslation } from "react-i18next";
 
-function Footer() {
+function Footer({ type }) {
     const { t } = useTranslation();
 
     return (
         <>
-            <div className="InfoWrap">
-                <Container>
-                    <Row>
-                        <Col md={12}>
-                            <h2>{t("Build, Innovate, Unleash with Metaport")}</h2>
+            {type === 'Expertise' &&
+                <div className="ExpertiseFooter">
+                    <Container>
+                        <Row>
+                                <Col md={9}>
+                                    <h3>{t("Want a Solution for your Business?")}</h3>
+                                    <h2>{t("Let Us Know if you Have a Project That Needs to Be Delivered")}</h2>
+                                </Col>
+                                <Col md={3} className='ExButton'>
+                                    <Link href={'/contact'} className='c-button fillBtn'>{t("Contact Team")}</Link>
+                                </Col>
+                        </Row>
+                    </Container>
+                </div >
+            }
 
-                            <Link href={'/contact'} className='c-button fillBtn'>{t("Contact Team")}</Link>
+            {
+                type === "Home" &&
+                <div className="InfoWrap">
+                    <Container>
+                        <Row>
+                            <Col md={12}>
+                                <h2>{t("Build, Innovate, Unleash with Metaport")}</h2>
 
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+                                <Link href={'/contact'} className='c-button fillBtn'>{t("Contact Team")}</Link>
+
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+            }
+
+            {
+                type === "About" &&
+                <div className="InfoWrap">
+                    <Container>
+                        <Row>
+                            <Col md={12}>
+                                <h2>{t("Build, Innovate, Unleash with Metaport")}</h2>
+
+                                <Link href={'/contact'} className='c-button fillBtn'>{t("Contact Team")}</Link>
+
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+            }
+
+            {
+                type === "Contact" &&
+                <div className="InfoWrap">
+                    <Container>
+                        <Row>
+                            <Col md={12}>
+                                <h2>{t("Build, Innovate, Unleash with Metaport")}</h2>
+
+                                <Link href={'/contact'} className='c-button fillBtn'>{t("Contact Team")}</Link>
+
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+            }
 
             <footer className='footerWrap'>
                 <Container>
@@ -33,7 +80,7 @@ function Footer() {
                         <Col md={3}>
                             <div className="widget">
 
-                                <Image src={Logo} alt="Metaport" className='fLogo' style={{ width: 209, height: 'auto' }} priority={true} />
+                                <Image src="/images/logo.svg" width={209} height={41} alt="Metaport" className='fLogo' style={{ width: 209, height: 'auto' }} priority={true} />
 
                                 <p>{t("Unleashing the boundless potential for global industries, pursuing excellence with brilliant minds and building powerful tools.")}</p>
 
@@ -76,28 +123,27 @@ function Footer() {
                                 <h3>{t("Business Inquiry")}</h3>
 
                                 <div className="inquiry">
-                                    {/* <img src={email} alt="" /> */}
-                                    <Image src={email} alt="Email" />
+                                    <Image src="/images/i-01.png" width={20} height={20} alt="Email" />
 
                                     <div>
                                         <h5>Email</h5>
-                                        <p>business@metaport.com</p>
+                                        <p>business@metaports.co</p>
                                     </div>
                                 </div>
                                 <div className="inquiry">
-                                    <Image src={call} alt="Call" />
+                                    <Image src="/images/i-02.png" width={20} height={20} alt="Call" />
 
                                     <div>
                                         <h5>Phone</h5>
-                                        <p>+96 6544 54778</p>
+                                        <p>+97 154 374 5479</p>
                                     </div>
 
                                 </div>
                                 <div className="inquiry">
-                                    <Image src={notification} alt="Notification" />
+                                    <Image src="/images/i-03.png" width={20} height={20} alt="Notification" />
                                     <div>
                                         <h5>{t("Location")}</h5>
-                                        <p>Sheikh Mohammed Bin Rashed Boulevard Downtown Dubai, PO Box 123234 Dubai, UAE</p>
+                                        <p>Unit 1, Level G, Emirates Towers Boulevard, Dubai, UAE</p>
                                     </div>
                                 </div>
                             </div>
