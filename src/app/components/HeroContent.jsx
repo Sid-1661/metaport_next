@@ -31,7 +31,6 @@ function HeroContent({ interval = 3000 }) {
     //     });
     // };
 
-
     useEffect(() => {
         return () => {
             clearTimeout(timeoutRef.current);

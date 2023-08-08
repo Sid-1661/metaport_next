@@ -13,6 +13,7 @@ function formValid(body) {
 export default async function handler(req, res) {
   const body = req.body;
   
+  
   const { error } = await supabaseClient
   .from('metaport_contact')
   .insert({ 
