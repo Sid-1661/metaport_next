@@ -13,7 +13,6 @@ function formValid(body) {
 export default async function handler(req, res) {
   const body = req.body;
   
-  
   const { error } = await supabaseClient
   .from('metaport_contact')
   .insert({ 
@@ -22,50 +21,12 @@ export default async function handler(req, res) {
     number: body.phone,
     message: body.message
    })
+
   return res.status(200).json({
     name: body.name,
     email: body.email,
     phone: body.phone,
     message: body.message
   });
-
-  
-  // if (!formValid(body)) {
-  //   res.status(422).end();
-  //   return;
-  // }
-
-  // const profile = await sdk.getProfile('communication/send-email@2.1.0');
-  // const message = `
-  //   Email: ${body.email}
-  //   Phone: ${body.phone}
-  //   Name: ${body.name}
-  //   Message: ${body.message} 
-  //   `;
-  // const result = await profile.getUseCase('SendEmail').perform(
-  //   {
-  //     from: process.env.FROM_EMAIL,
-  //     to: process.env.TO_EMAIL,
-  //     subject: 'Message from contact form',
-  //     text: message,
-  //   },
-  //   {
-  //     provider: 'sendgrid',
-  //     security: {
-  //       bearer_token: {
-  //         token: process.env.SENDGRID_API_KEY,
-  //       },
-  //     },
-  //   }
-  // );
-
-  // try {
-  //   const data = result.unwrap();
-  //   console.log(data);
-  //   res.status(201).end();
-  // } catch (error) {
-  //   console.error(error);
-  //   res.status(500).end();
-  // }
   
 }

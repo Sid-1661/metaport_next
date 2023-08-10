@@ -199,9 +199,6 @@ export default function Home() {
 
                             <div className="ProgressContent">
                                 <ul>
-                                    {/* <li className='one wow fadeIn' data-wow-delay="1.5s">
-                                        <span>Accelerate Global Reach</span>
-                                    </li> */}
                                     <li
                                         className="two wow fadeIn"
                                         data-wow-delay="0.8s"
