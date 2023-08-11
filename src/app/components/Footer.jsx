@@ -135,7 +135,7 @@ function Footer({ type }) {
 
                                     <div>
                                         <h5>Phone</h5>
-                                        <p>+97 154 374 5479</p>
+                                        <p>+971 54 374 5479 </p>
                                     </div>
 
                                 </div>

@@ -33,6 +33,7 @@ export default function RootLayout({ children }) {
                     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
                     crossOrigin="anonymous"
                 />
+                <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"></link>
                 <link
                     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/css/intlTelInput.css"
                     rel="stylesheet"
