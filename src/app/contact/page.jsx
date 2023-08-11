@@ -21,6 +21,11 @@ function Contact() {
         e.preventDefault();
         const data = new FormData(e.currentTarget);
 
+        if (!data.email) {
+            alert('Please enter your email address.');
+            return;
+          }
+
         try {
             const response = await fetch('/api/contact', {
                 method: 'POST',
