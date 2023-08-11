@@ -4,7 +4,19 @@ export const metadata = {
   keywords: [
     "INNOVATION",
     "INSPIRATION",
-    "IMPACT"
+    "IMPACT",
+    "IT",
+    "Service",
+    "AR",
+    "VR",
+    "AI",
+    "B2B",
+    "ECOMMERCE",
+    "METAVERSE",
+    "DEV OPS",
+    "IOT",
+    "BLOCKCHAIN",
+    "SEcurity"
   ]
 };
 
