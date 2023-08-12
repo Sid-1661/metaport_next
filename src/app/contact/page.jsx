@@ -20,11 +20,12 @@ function Contact() {
     async function handleSubmit(e) {
         e.preventDefault();
         const data = new FormData(e.currentTarget);
-
-        if (!data.email) {
-            alert('Please enter your email address.');
+        const name = data.get('name');
+        const email = data.get('email');
+        if (!name || !email ) {
+            alert('Please enter your name and email');
             return;
-          }
+        }
 
         try {
             const response = await fetch('/api/contact', {
@@ -36,6 +37,7 @@ function Contact() {
                 throw new Error(`Invalid response: ${response.status}`);
             }
             alert('Thanks for contacting us, we will get back to you soon!');
+            window.location.reload();
         } catch (err) {
             console.error(err);
             alert("We can't submit the form, try again later?");
@@ -72,7 +74,7 @@ function Contact() {
                                     </Col>
                                     <Col md={6} className='form-group'>
                                         <label htmlFor="phone">{t("Your Phone")}</label>
-                                        <input ref={inputRef} type="text" name='phone' className='form-control' placeholder='XXXX' style={{display: 'none'}}/>
+                                        <input ref={inputRef} type="text" name='phone' className='form-control' placeholder='XXXX' style={{ display: 'none' }} />
                                         <PhoneInput
                                             placeholder="+123 456 7890"
                                             value={number}
