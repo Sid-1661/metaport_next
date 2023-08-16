@@ -23,14 +23,6 @@ function HeroContent({ interval = 3000 }) {
     const colors = ['red', 'blue', 'green'];
 
     const timeoutRef = useRef(null);
-
-    // const scrollToBottom = () => {
-    //     window.scrollTo({
-    //         top: document.documentElement.scrollHeight,
-    //         behavior: 'smooth',
-    //     });
-    // };
-
     useEffect(() => {
         return () => {
             clearTimeout(timeoutRef.current);
@@ -82,8 +74,6 @@ function HeroContent({ interval = 3000 }) {
 
             </Container>
             <br />
-           
-                {/* <Icon className={[styles.scrollDown]} onClick={scrollToBottom} path={mdiArrowDownBox} size={3} > Go To Bottom</Icon> */}
         </div>
     )
 }

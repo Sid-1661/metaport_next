@@ -15,47 +15,6 @@ function Menu() {
                 <nav id="site-navigation" className="navigation main-navigation main-navigation-one">
                     <div id="cmm-main_menu" className="cmm-container" aria-expanded="false">
                         <ul>
-                            {/* <li className="cmm-item-has-content">
-                                <a>Solutions</a>
-                                <div className="cmm-content-container">
-                                    <div className="cmm-content-wrapper">
-                                        <div className="c-rich-nav c-rich-nav--solutions">   
-                                            <h4 className="vcex-heading">
-                                                <a href="#" className="wpex-no-underline"> Industries</a>
-                                            </h4>
-                                            <nav className="mb-2">
-                                                <div className="vcex-navbar-inner">                                                
-                                                    <a href="#" className="vcex-navbar-link">Menu 1</a>
-                                                    <a href="#" className="vcex-navbar-link">Menu 2</a>
-                                                    <a href="#" className="vcex-navbar-link">Menu 3</a>
-                                                    <a href="#" className="vcex-navbar-link">Menu 4</a>
-                                                </div>
-                                            </nav>
-
-                                            <h4 className="vcex-heading">
-                                                <a href="#" className="wpex-no-underline"> Industries</a>
-                                            </h4>   
-
-                                            <nav className="vcex-navbar mb-2">
-                                                <div className="vcex-navbar-inner">                                            
-                                                    <div className="vcex-navbar-list-item">
-                                                        <a href="#" className="vcex-navbar-link">Menu 1</a>
-                                                    </div>
-                                                    <div className="vcex-navbar-list-item">
-                                                        <a href="#" className="vcex-navbar-link">Menu 2</a>
-                                                    </div>
-                                                    <div className="vcex-navbar-list-item">
-                                                        <a href="#" className="vcex-navbar-link">Menu 3</a>
-                                                    </div>
-                                                    <div className="vcex-navbar-list-item">
-                                                        <a href="#" className="vcex-navbar-link">Menu 4</a>
-                                                    </div>                                             
-                                                </div>
-                                            </nav>   
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>*/}
                             <li><Link href={'/expertise'}> {t("Our Expertise")}</Link></li>
                             <li><Link href={'/'}>{t("Our Products")}</Link></li>
                             <li><Link href={'/'}>{t("Insights")}</Link></li>

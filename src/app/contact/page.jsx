@@ -1,19 +1,32 @@
 "use client"; // This is a client component 👈🏽
-import React from 'react' 
+import React, { useState, useRef } from 'react'
 import { Col, Container, Row } from 'reactstrap';
 import Image from 'next/image';
 
 import Header from '../components/Header'
 import Footer from '../components/Footer';
 import Styles from './Contact.module.css'
+import PhoneInput from 'react-phone-number-input'
+import 'react-phone-number-input/style.css'
 
 import { useTranslation } from "react-i18next";
 
+
 function Contact() {
     const { t } = useTranslation();
+    const [number, setNumber] = useState("");
+    const inputRef = useRef()
+
     async function handleSubmit(e) {
         e.preventDefault();
         const data = new FormData(e.currentTarget);
+        const name = data.get('name');
+        const email = data.get('email');
+        if (!name || !email ) {
+            alert('Please enter your name and email');
+            return;
+        }
+
         try {
             const response = await fetch('/api/contact', {
                 method: 'POST',
@@ -24,11 +37,17 @@ function Contact() {
                 throw new Error(`Invalid response: ${response.status}`);
             }
             alert('Thanks for contacting us, we will get back to you soon!');
+            window.location.reload();
         } catch (err) {
             console.error(err);
             alert("We can't submit the form, try again later?");
         }
     }
+
+    const handleNumber = (number) => {
+        inputRef.current.value = number
+    }
+
     return (
         <>
 
@@ -47,6 +66,7 @@ function Contact() {
 
                         <Col md={8}>
                             <form onSubmit={handleSubmit}>
+
                                 <Row className='mb-3'>
                                     <Col md={6} className='form-group'>
                                         <label htmlFor="name">{t("Your Name")}</label>
@@ -54,7 +74,12 @@ function Contact() {
                                     </Col>
                                     <Col md={6} className='form-group'>
                                         <label htmlFor="phone">{t("Your Phone")}</label>
-                                        <input type="text" name='phone' className='form-control' placeholder='XXXX' />
+                                        <input ref={inputRef} type="text" name='phone' className='form-control' placeholder='XXXX' style={{ display: 'none' }} />
+                                        <PhoneInput
+                                            placeholder="+123 456 7890"
+                                            value={number}
+                                            onChange={handleNumber}
+                                        />
                                     </Col>
                                 </Row>
                                 <Row className='mb-3'>
@@ -96,7 +121,7 @@ function Contact() {
                             <div className={Styles.addressInfo}>
                                 <Image src="/images/i-05.png" alt='UAE Dubai' width={84} height={84} className={Styles.Icon} />
 
-                                <p><Image src="/images/call.png" width={30} height={30} alt='UAE Dubai' /> +97 154 374 5479</p>
+                                <p><Image src="/images/call.png" width={30} height={30} alt='UAE Dubai' /> +971 54 374 5479 </p>
                                 <p><Image src="/images/sms.png" width={30} height={30} alt='UAE Dubai' />  info@metaports.co</p>
                             </div>
                         </Col>
