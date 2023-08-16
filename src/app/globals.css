@@ -1463,6 +1463,115 @@ header.HeaderWrap .headerRight ul li.button a:hover {
 .WhatsNewWrap {
 	padding: 100px 0 80px;
 }
+.WhatsNew .carousel-control-item {
+	position: absolute;
+	display: block;
+	top: 50%;
+	padding: 15px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.3);
+	transition: .4s all;
+	cursor: pointer;
+	transform: translateY(-50%);
+}
+.WhatsNew .carousel-control-item:hover {
+	background-color: black;
+	transition: .4s all;
+}
+.WhatsNew .carousel-control-item-prev {
+	left: 0;
+}
+.WhatsNew .carousel-control-item-next {
+	right: 0;
+}
+.WhatsNew .carousel-indicators-wrap {
+	display: flex;
+	justify-content: center;
+	margin-top: 32px;
+}
+.WhatsNew .carousel-indicator {
+	width: 18px;
+	height: 18px;
+	background: #D9D9D9;
+	border-radius: 50%;
+	transition: .4s all;
+	margin-left: 12px;
+	margin-right: 12px;
+	cursor: pointer;
+}
+.WhatsNew .carousel-indicator.active {
+	background: #FF007A;
+}
+.WhatsNew .carousel-indicator:hover {
+	background: #FF007A;
+	transition: .4s all;
+}
+.WhatsNew .WhatsNewItem {
+	border-radius: 24px;
+	background-color: #FF007A;
+	position: relative;
+}
+
+.WhatsNew .WhatsNewItem::before {
+	position: absolute;
+	content: "";
+	width: 40%;
+	height: 100%;
+	top: 0;
+	left: 30%;
+	background-image: linear-gradient(
+	  to right,
+	  rgba(255, 255, 255, 0),
+	  #FF007A
+	);
+}
+.WhatsNew .WhatsNewItem img {
+	border-top-left-radius: 14px;
+	border-bottom-left-radius: 14px;
+	width: 70%;
+}
+
+.WhatsNew .WhatsNewItem .WhatNewItemInfo {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	color: white;
+	transform: translateY(-50%);
+	width: 40%;
+}
+.WhatsNew .WhatsNewItem .WhatNewItemInfo .title {
+	font-size: 68px;
+	font-family: Anton;
+	font-weight: 400;
+
+}
+.WhatsNew .WhatsNewItem .WhatNewItemInfo .desc {
+	font-size: 24px;
+	font-family: Poppins;
+	margin-top: 16px;
+	margin-bottom: 32px;
+
+}
+.WhatsNew .WhatsNewItem .WhatNewItemInfo .time-container {
+	display: flex;
+}
+
+.WhatsNew .WhatsNewItem .WhatNewItemInfo .time-item {
+	margin-right: 12px;
+}
+.WhatsNew .WhatsNewItem .WhatNewItemInfo .time {
+	font-size: 36px;
+	text-align: center;
+	font-family: Anton;
+	font-weight: 400;
+
+}
+
+.WhatsNew .WhatsNewItem .WhatNewItemInfo .time-desc {
+	font-size: 14px;
+	text-align: center;
+	font-family: Poppins;
+}
 
 .BlogWrap {
 	text-align: center;
@@ -2453,7 +2562,7 @@ h4.c-rich-nav__heading-link a:hover span {
 	}
 
 	h2.Title {
-		font-size: 30px;
+		font-size: 46px;
 		padding: 0 0;
 	}
 
@@ -2597,6 +2706,125 @@ h4.c-rich-nav__heading-link a:hover span {
 
 	.gradientBubble h4 {
 		font-size: 13.38px;
+	}
+	.WhatsNew .carousel-control-item {
+		position: absolute;
+		display: block;
+		top: 50%;
+		padding: 15px;
+		border-radius: 50%;
+		background-color: rgba(0, 0, 0, 0.3);
+		transition: .4s all;
+		cursor: pointer;
+		transform: translateY(-50%);
+		display: none;
+	}
+	.WhatsNew .carousel-control-item:hover {
+		background-color: black;
+		transition: .4s all;
+	}
+	.WhatsNew .carousel-control-item-prev {
+		left: 0;
+	}
+	.WhatsNew .carousel-control-item-next {
+		right: 0;
+	}
+	.WhatsNew .carousel-indicators-wrap {
+		display: flex;
+		justify-content: center;
+		margin-top: 32px;
+	}
+	.WhatsNew .carousel-indicator {
+		width: 18px;
+		height: 18px;
+		background: #D9D9D9;
+		border-radius: 50%;
+		transition: .4s all;
+		margin-left: 12px;
+		margin-right: 12px;
+		cursor: pointer;
+	}
+	.WhatsNew .carousel-indicator.active {
+		background: #FF007A;
+	}
+	.WhatsNew .carousel-indicator:hover {
+		background: #FF007A;
+		transition: .4s all;
+	}
+	.WhatsNew .WhatsNewItem {
+		border-radius: 24px;
+		background-color: #FF007A;
+		position: relative;
+	}
+	
+	.WhatsNew .WhatsNewItem::before {
+		display: none;
+		/* position: absolute;
+		content: "";
+		width: 40%;
+		height: 100%;
+		top: 0;
+		left: 30%;
+		background-image: linear-gradient(
+		  to right,
+		  rgba(255, 255, 255, 0),
+		  #FF007A
+		); */
+	}
+	.WhatsNew .WhatsNewItem img {
+		display: none;
+		/* border-top-left-radius: 14px;
+		border-bottom-left-radius: 14px;
+		width: 70%; */
+	}
+	
+	.WhatsNew .WhatsNewItem .WhatNewItemInfo {
+		/* position: absolute; */
+		/* left: 50%;
+		top: 50%; */
+		color: white;
+		/* transform: translateY(-50%); */
+		/* width: 40%; */
+		position: relative;
+		display: block;
+		transform: none;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 32px 16px;
+	}
+	.WhatsNew .WhatsNewItem .WhatNewItemInfo .title {
+		font-size: 42px;
+		font-family: Anton;
+		font-weight: 400;
+	
+	}
+	.WhatsNew .WhatsNewItem .WhatNewItemInfo .desc {
+		font-size: 24px;
+		font-family: Poppins;
+		margin-top: 16px;
+		margin-bottom: 32px;
+	
+	}
+	.WhatsNew .WhatsNewItem .WhatNewItemInfo .time-container {
+		display: flex;
+	}
+	
+	.WhatsNew .WhatsNewItem .WhatNewItemInfo .time-item {
+		margin-right: 12px;
+	}
+	.WhatsNew .WhatsNewItem .WhatNewItemInfo .time {
+		font-size: 36px;
+		text-align: center;
+		font-family: Anton;
+		font-weight: 400;
+	
+	}
+	
+	.WhatsNew .WhatsNewItem .WhatNewItemInfo .time-desc {
+		font-size: 14px;
+		text-align: center;
+		font-family: Poppins;
 	}
 }
 
