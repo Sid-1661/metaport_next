@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import {
   Carousel,
@@ -27,11 +27,55 @@ const items = [
   },
 ];
 
+const oneSec = 1000;
+const oneMin = oneSec * 60;
+const oneHour = oneMin * 60;
+const oneDay = oneHour * 24;
+
 const WhatNew = () => {
   const { t } = useTranslation();
 
   const [animating, setAnimating] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
+
+  const launchDate = new Date(2023, 8, 10);
+  const [currentDate, setCurrentDate] = useState(new Date());
+
+  useEffect(() => {
+    console.log(currentDate);
+    setTimeout(() => {
+      setCurrentDate(new Date(new Date().getTime() + 1000));
+    }, 1000);
+  }, [currentDate]);
+
+  const days = useMemo(
+    () => Math.floor((launchDate.getTime() - currentDate.getTime()) / oneDay),
+    [currentDate]
+  );
+
+  const hours = useMemo(
+    () =>
+      Math.floor(
+        ((launchDate.getTime() - currentDate.getTime()) % oneDay) / oneHour
+      ),
+    [currentDate]
+  );
+
+  const mins = useMemo(
+    () =>
+      Math.floor(
+        ((launchDate.getTime() - currentDate.getTime()) % oneHour) / oneMin
+      ),
+    [currentDate]
+  );
+
+  const secs = useMemo(
+    () =>
+      Math.floor(
+        ((launchDate.getTime() - currentDate.getTime()) % oneMin) / oneSec
+      ),
+    [currentDate]
+  );
 
   const onExiting = () => {
     setAnimating(true);
@@ -59,9 +103,9 @@ const WhatNew = () => {
     setActiveIndex(newIndex);
   };
 
-  const slides = items.map((item) => {
+  const slides = items.map((item, index) => {
     return (
-      <CarouselItem onExiting={onExiting} onExited={onExited} key={item.src}>
+      <CarouselItem onExiting={onExiting} onExited={onExited} key={index}>
         <div className="WhatsNewItem">
           <img src={item.src} alt={item.altText} />
           <div className="WhatNewItemInfo">
@@ -72,7 +116,7 @@ const WhatNew = () => {
             </div>
             <div className="time-container">
               <div className="time-item">
-                <div className="time">24</div>
+                <div className="time">{days > 9 ? days : "0" + days}</div>
                 <div className="time-desc">DAYS</div>
               </div>
               <div className="time-item">
@@ -80,7 +124,7 @@ const WhatNew = () => {
                 <div className="time-desc"></div>
               </div>
               <div className="time-item">
-                <div className="time">08</div>
+                <div className="time">{hours > 9 ? hours : "0" + hours}</div>
                 <div className="time-desc">HOURS</div>
               </div>
               <div className="time-item">
@@ -88,7 +132,7 @@ const WhatNew = () => {
                 <div className="time-desc"></div>
               </div>
               <div className="time-item">
-                <div className="time">32</div>
+                <div className="time">{mins > 9 ? mins : "0" + mins}</div>
                 <div className="time-desc">MINS</div>
               </div>
               <div className="time-item">
@@ -96,7 +140,7 @@ const WhatNew = () => {
                 <div className="time-desc"></div>
               </div>
               <div className="time-item">
-                <div className="time">48</div>
+                <div className="time">{secs > 9 ? secs : "0" + secs}</div>
                 <div className="time-desc">SECS</div>
               </div>
             </div>
